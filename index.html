@@ -1,1242 +1,1314 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width">
-        <title>AutoShield</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width">
+    <title>AutoShield</title>
 
-        <!-- BOOTSTRAP Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- BOOTSTRAP Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link href="css/icons.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
-        <style type="text/css">
+    <style type="text/css">
 
-            body {
-                font-family: 'Lato', sans-serif;
-            }
+        body {
+            font-family: 'Lato', sans-serif;
+        }
 
-            @-webkit-keyframes fadeIn {
-                from {
-                    opacity: 0
-                }
-
-                to {
-                    opacity: 1
-                }
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0
             }
 
-            @keyframes fadeIn {
-                from {
-                    opacity: 0
-                }
-
-                to {
-                    opacity: 1
-                }
+            to {
+                opacity: 1
             }
+        }
 
-            .fadeIn {
-                -webkit-animation-name: fadeIn;
-                animation-name: fadeIn
+        @keyframes fadeIn {
+            from {
+                opacity: 0
             }
 
-            .fadeIn {
-                -webkit-animation-name: fadeIn;
-                animation-name: fadeIn;
+            to {
+                opacity: 1
             }
-            .animated {
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-            }
+        }
 
-            .underline {
-                text-decoration: underline;
-            }
-            a.button:hover {
-                color: #FFFFFF;
-                text-decoration: none;
-            }
-            h1.lowercase {
-                text-transform: none;
-            }
-            span.uppercase {
-                text-transform: uppercase;
-            }
-            .form-box {
-                box-shadow: -2.5px 4.3px 10px 0 rgba(0,54,92,0.3);
-            }
+        .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn
+        }
 
-            .auto-feature-row {
-                margin-top: 15px;
-            }
-            .auto-feature {
-                background-color: #FFFFFF;
-                /*border: 1px solid #e4e7ea;*/
-                border-radius: 5px;
-                box-shadow: 0 0 5px 0 rgba(0,54,92,0.3);
-                padding-top: 15px;
-                padding-bottom: 15px;
-                display : flex;
-                align-items : center;
-            }
-            .auto-feature span:first-of-type {
-                color: #003746;
-                font-size: 1.4em;
-            }
-            .icon-text {
-                margin-left: 10px;
-            }
-            div.container-fluid,footer {
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-            }
-            .input-box {
-                background-color: rgba(255,255,255,0.7);
-                box-shadow: -2.5px 4.3px 10px 0 rgba(152,56,46,0.3);
-                border: 0;
-                color: black;
-            }
-            .content-box-last {
-                padding-bottom:0;
-            }
-            img.limited-width {
-                max-width: 500px;
-            }
+        .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+        }
 
-            /** FORM & INPUTS **/
-            .form-inside {
-                margin-top: 25px;
-            }
+        .animated {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        a.button:hover {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        h1.lowercase {
+            text-transform: none;
+        }
+
+        span.uppercase {
+            text-transform: uppercase;
+        }
+
+        .form-box {
+            box-shadow: -2.5px 4.3px 10px 0 rgba(0, 54, 92, 0.3);
+        }
+
+        .auto-feature-row {
+            margin-top: 15px;
+        }
+
+        .auto-feature {
+            background-color: #FFFFFF;
+            /*border: 1px solid #e4e7ea;*/
+            border-radius: 5px;
+            box-shadow: 0 0 5px 0 rgba(0, 54, 92, 0.3);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .auto-feature span:first-of-type {
+            color: #003746;
+            font-size: 1.4em;
+        }
+
+        .icon-text {
+            margin-left: 10px;
+        }
+
+        div.container-fluid, footer {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .input-box {
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: -2.5px 4.3px 10px 0 rgba(152, 56, 46, 0.3);
+            border: 0;
+            color: black;
+        }
+
+        .content-box-last {
+            padding-bottom: 0;
+        }
+
+        img.limited-width {
+            max-width: 500px;
+        }
+
+        /** FORM & INPUTS **/
+        .form-inside {
+            margin-top: 25px;
+        }
+
+        .button {
+            box-shadow: -2.5px 4.3px 10px 0 rgba(0, 27, 121, 0.3);
+        }
+
+        .visually-hidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        .custom-element-container.error label,
+        .custom-select-wrapper.error label {
+            display: none !important;
+        }
+
+        input[type="text"], input[type="password"], .drop-down {
+            /*border: none;*/
+            /*background-color: transparent;*/
+            background-color: #fff;
+            color: #00365c;
+            width: 100%;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+        }
+
+        .drop-down {
+            padding: 16px 10px 14px 10px;
+        }
+
+        .custom-select-wrapper {
+            position: relative;
+        }
+
+        .custom-select-wrapper select {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=\"0\")";
+            filter: alpha(opacity=0);
+            zoom: 1;
+        }
+
+        .drop-down {
+
+            border: none;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            text-transform: uppercase;
+            position: relative;
+            line-height: 1;
+            color: #848484;
+            *zoom: 1;
+        }
+
+        .drop-down:before, .drop-down:after {
+            content: " ";
+            display: table;
+        }
+
+        .drop-down:after {
+            clear: both;
+        }
+
+        .drop-down span {
+            display: block;
+            float: left;
+        }
+
+        .drop-down.itemSelected {
+            color: #8db548;
+        }
+
+        .drop-down .arrow {
+            width: 0;
+            height: 0;
+            border-left: 0.3em solid transparent;
+            border-right: 0.3em solid transparent;
+            border-top: 0.3em solid #cccccc;
+            margin-top: 0.35em;
+            margin-left: 0.5em;
+        }
+
+        /* match the color of the input text rather than the placeholder */
+        .no-placeholder .drop-down {
+            color: #636363;
+        }
+
+        .no-placeholder .drop-down.itemSelected {
+            color: #8db548;
+        }
+
+        /** FOOTER **/
+        footer hr {
+            margin-top: 20px;
+            margin-bottom: 0;
+            border: 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-logo {
+            padding-bottom: 30px;
+        }
+
+        .footer-links > a {
+            color: #fff;
+        }
+
+        .footer-links > span {
+            background: #fff none repeat scroll 0 0;
+            display: inline-block;
+            height: 12px;
+            margin: 0 10px;
+            width: 2px;
+        }
+
+        .footer-terms {
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .footer-terms p {
+            color: #ebebeb;
+            font-size: 13px;
+            margin: 0 0 10px;
+            text-align: center;
+        }
+
+        /** RESPONSIVE **/
+        @media only screen and (min-width: 960px) and (max-width: 1000px) {
             .button {
-                box-shadow: -2.5px 4.3px 10px 0 rgba(0,27,121,0.3);
+                font-size: 18px;
             }
-            .visually-hidden {
-                border: 0;
-                clip: rect(0 0 0 0);
-                height: 1px;
-                margin: -1px;
-                overflow: hidden;
-                padding: 0;
-                position: absolute;
-                width: 1px;
-            }
-            .custom-element-container.error label,
-            .custom-select-wrapper.error label {
-                display: none !important; }
-            input[type="text"], input[type="password"], .drop-down {
-                /*border: none;*/
-                /*background-color: transparent;*/
-                background-color: #fff;
-                color: #00365c;
-                width: 100%;
-                box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                -o-box-sizing: border-box;
-                -ms-box-sizing: border-box; }
+        }
 
-            .drop-down {
-                padding: 16px 10px 14px 10px; }
-
-            .custom-select-wrapper {
-                position: relative; }
-
-            .custom-select-wrapper select {
-                position: absolute;
-                top: 0;
-                left: 0;
-                padding: 0;
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=\"0\")";
-                filter: alpha(opacity=0);
-                zoom: 1; }
-
-            .drop-down {
-
-                border:none; -webkit-border-radius: 5px; -moz-border-radius:5px; border-radius: 5px;
-
-                text-transform: uppercase;
-                position: relative;
-                line-height: 1;
-                color: #848484;
-                *zoom: 1; }
-
-            .drop-down:before, .drop-down:after {
-                content: " ";
-                display: table; }
-
-            .drop-down:after {
-                clear: both; }
-
-            .drop-down span {
-                display: block;
-                float: left; }
-
-            .drop-down.itemSelected {
-                color: #8db548; }
-
-            .drop-down .arrow {
-                width: 0;
-                height: 0;
-                border-left: 0.3em solid transparent;
-                border-right: 0.3em solid transparent;
-                border-top: 0.3em solid #cccccc;
-                margin-top: 0.35em;
-                margin-left: 0.5em; }
-
-            /* match the color of the input text rather than the placeholder */
-            .no-placeholder .drop-down {
-                color: #636363; }
-
-            .no-placeholder .drop-down.itemSelected {
-                color: #8db548; }
-
-
-            /** FOOTER **/
-            footer hr {
-                margin-top: 20px;
-                margin-bottom: 0;
-                border: 0;
-                border-top: 1px solid rgba(255, 255, 255, 0.2);
-            }
-            .footer-logo {
-                padding-bottom: 30px;
-            }
-            .footer-links>a {
-                color: #fff;
-            }
-            .footer-links>span {
-                background: #fff none repeat scroll 0 0;
-                display: inline-block;
-                height: 12px;
-                margin: 0 10px;
-                width: 2px;
-            }
-            .footer-terms {
-                margin-top: 20px;
-                color: #fff;
-            }
-            .footer-terms p {
-                color: #ebebeb;
-                font-size: 13px;
-                margin: 0 0 10px;
-                text-align: center;
+        @media only screen and (min-width: 480px) and (max-width: 960px) {
+            .top-right h2.styleFontface{
+                font-size: 32px;
             }
 
-            /** RESPONSIVE **/
-            @media only screen and (min-width: 960px) and (max-width: 1000px) {
-                .button {
-                    font-size: 18px;
-                }
-            }
-            @media only screen and (min-width: 480px) and (max-width: 960px) {
-                .content-box-last {
-                    padding-bottom: 80px;
-                }
-                img.limited-width {
-                    max-width: 100%;
-                }
-                .button {
-                    font-size: 18px;
-                }
-            }
-            @media only screen and (max-width: 479px) and (min-width: 300px) {
-                .icon-text {
-                    font-size: 12px;
-                    margin-left: 5px;
-                }
-                .content-box-last {
-                    padding-bottom: 80px;
-                }
-                img.limited-width {
-                    max-width: 100%;
-                }
+            .content-box-last {
+                padding-bottom: 80px;
             }
 
-            @media (max-width: 600px) {
-
-                .footer-main-box .pull-left,.footer-main-box .pull-right {
-                    float: none!important;
-                    text-align: center
-                }
-
-                .footer-main-box .pull-left {
-                    margin-bottom: 30px
-                }
-
-                .footer-main-box {
-                    padding: 25px 0
-                }
+            img.limited-width {
+                max-width: 100%;
             }
 
-        </style>
+            .button {
+                font-size: 18px;
+            }
+        }
 
-        <script src="https://use.fontawesome.com/e11dc4a8bc.js"></script>
-    </head>
-    <body>
+        @media only screen and (max-width: 479px) and (min-width: 300px) {
+
+            .top-right h2.styleFontface{
+                font-size: 32px;
+            }
+
+            .icon-text {
+                font-size: 12px;
+                margin-left: 5px;
+            }
+
+            .content-box-last {
+                padding-bottom: 80px;
+            }
+
+            img.limited-width {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .footer-main-box .pull-left, .footer-main-box .pull-right {
+                float: none !important;
+                text-align: center
+            }
+
+            .footer-main-box .pull-left {
+                margin-bottom: 30px
+            }
+
+            .footer-main-box {
+                padding: 25px 0
+            }
+        }
+
+    </style>
+
+    <script src="https://use.fontawesome.com/e11dc4a8bc.js"></script>
+</head>
+<body>
 
 
 <div class="content-wrapper">
 
-  <section id="content">
-  <div class="body-top-box">
-  <div class="wrap-content zerogrid">
-  <div class="top-inside">
-<div class="top-left">
-    <img src="images/logo.png" style="height: 50px"/>
-<!--<h5 class="styleFontface">Online <span class="white-bold">Care Rental</span></h5>-->
-</div>
-  <div class="top-right">
-             <h2 class="styleFontface">Start saving money today!</h2>
-</div>
-</div>
-  </div>
-  </div>
-    <section id="welcome">
-  <div class="wrap-content zerogrid">
-  <div class="welcome-inside">
-          <div class="welcome-left">
-            <h1 class="styleFontface lowercase">Compare Auto Warranty <br />
-                Quotes For <span class="underline uppercase">Free</span></h1>
-
-              <!--<div class="subnav">-->
-
-                  <!--<ul>-->
-                      <!--<li>-->
-                          <!--<h2 class="styleFontface">Personalized coverage plans</h2>-->
-                      <!--</li>-->
-                      <!--<li>-->
-                        <!--<h2 class="styleFontface">Match you with AAA rated warranty providers</h2>-->
-                      <!--</li>-->
-                  <!--</ul>-->
-
-              <!--</div>-->
-
-          </div>
-          <div class="form-box orange animated fadeIn">
-
-                <div class="form-title">
-                    <h2 class="styleFontface">START HERE!</h2>
-                    GET A QUOTE FOR YOUR MAKE AND MODEL.
+    <section id="content">
+        <div class="body-top-box">
+            <div class="wrap-content zerogrid">
+                <div class="top-inside">
+                    <div class="top-left">
+                        <img src="images/logo.png" style="height: 50px"/>
+                        <!--<h5 class="styleFontface">Online <span class="white-bold">Care Rental</span></h5>-->
+                    </div>
+                    <div class="top-right">
+                        <h2 class="styleFontface">Start saving money today!</h2>
+                    </div>
                 </div>
-
-              <div class="form-inside">
-
-                  <form action="/" method="POST">
-
-                      <div class="form-group">
-
-                          <label class="visually-hidden" for="vehicleMakeID">Make</label>
-
-                          <div class="custom-select-wrapper">
-
-                              <div class="drop-down">
-                                  <span class="text">Make</span>
-                                  <span class="arrow"></span>
-                              </div>
-
-                              <select class="required custom form-control" id="vehicleMakeID" name="vehicleMakeID">
-                                  <option>
-                                      Make
-                                  </option>
-                                  <option>
-                                      Acura
-                                  </option>
-                                  <option>
-                                      Audi
-                                  </option>
-                                  <option>
-                                      BMW
-                                  </option>
-                                  <option>
-                                      Buick
-                                  </option>
-                                  <option>
-                                      Cadillac
-                                  </option>
-                                  <option>
-                                      Chevrolet
-                                  </option>
-                                  <option>
-                                      Chrysler
-                                  </option>
-                                  <option>
-                                      Dodge
-                                  </option>
-                                  <option>
-                                      Eagle
-                                  </option>
-                                  <option>
-                                      Fiat
-                                  </option>
-                                  <option>
-                                      Ford
-                                  </option>
-                                  <option>
-                                      Geo
-                                  </option>
-                                  <option>
-                                      GMC
-                                  </option>
-                                  <option>
-                                      Honda
-                                  </option>
-                                  <option>
-                                      Hummer
-                                  </option>
-                                  <option>
-                                      Hyundai
-                                  </option>
-                                  <option>
-                                      Infiniti
-                                  </option>
-                                  <option>
-                                      Isuzu
-                                  </option>
-                                  <option>
-                                      Jaguar
-                                  </option>
-                                  <option>
-                                      Jeep
-                                  </option>
-                                  <option>
-                                      Kia
-                                  </option>
-                                  <option>
-                                      Land Rover
-                                  </option>
-                                  <option>
-                                      Lexus
-                                  </option>
-                                  <option>
-                                      Lincoln
-                                  </option>
-                                  <option>
-                                      Mazda
-                                  </option>
-                                  <option>
-                                      Mercedes Benz
-                                  </option>
-                                  <option>
-                                      Mercury
-                                  </option>
-                                  <option>
-                                      MINI
-                                  </option>
-                                  <option>
-                                      Mitsubishi
-                                  </option>
-                                  <option>
-                                      Nissan
-                                  </option>
-                                  <option>
-                                      Oldsmobile
-                                  </option>
-                                  <option>
-                                      Plymouth
-                                  </option>
-                                  <option>
-                                      Pontiac
-                                  </option>
-                                  <option>
-                                      Porsche
-                                  </option>
-                                  <option>
-                                      Saab
-                                  </option>
-                                  <option>
-                                      Saturn
-                                  </option>
-                                  <option>
-                                      Scion
-                                  </option>
-                                  <option>
-                                      Subaru
-                                  </option>
-                                  <option>
-                                      Suzuki
-                                  </option>
-                                  <option>
-                                      Toyota
-                                  </option>
-                                  <option>
-                                      Volkswagen
-                                  </option>
-                                  <option>
-                                      Volvo
-                                  </option>
-
-                              </select>
-                          </div>
-
-                      </div>
-
-                      <div class="form-group">
-
-                          <label class="visually-hidden" for="vehicleModelId">Model</label>
-
-                          <div class="custom-select-wrapper">
-
-                              <div class="drop-down">
-                                  <span class="text">Model</span>
-                                  <span class="arrow"></span>
-                              </div>
-
-                              <select class="required custom form-control" id="vehicleModelId" name="vehicleModelId">
-                                  <option>
-                                      Model
-                                  </option>
-                                  <option>
-                                      Acura
-                                  </option>
-                                  <option>
-                                      Audi
-                                  </option>
-                                  <option>
-                                      BMW
-                                  </option>
-                                  <option>
-                                      Buick
-                                  </option>
-                                  <option>
-                                      Cadillac
-                                  </option>
-                                  <option>
-                                      Chevrolet
-                                  </option>
-                                  <option>
-                                      Chrysler
-                                  </option>
-                                  <option>
-                                      Dodge
-                                  </option>
-                                  <option>
-                                      Eagle
-                                  </option>
-                                  <option>
-                                      Fiat
-                                  </option>
-                                  <option>
-                                      Ford
-                                  </option>
-                                  <option>
-                                      Geo
-                                  </option>
-                                  <option>
-                                      GMC
-                                  </option>
-                                  <option>
-                                      Honda
-                                  </option>
-                                  <option>
-                                      Hummer
-                                  </option>
-                                  <option>
-                                      Hyundai
-                                  </option>
-                                  <option>
-                                      Infiniti
-                                  </option>
-                                  <option>
-                                      Isuzu
-                                  </option>
-                                  <option>
-                                      Jaguar
-                                  </option>
-                                  <option>
-                                      Jeep
-                                  </option>
-                                  <option>
-                                      Kia
-                                  </option>
-                                  <option>
-                                      Land Rover
-                                  </option>
-                                  <option>
-                                      Lexus
-                                  </option>
-                                  <option>
-                                      Lincoln
-                                  </option>
-                                  <option>
-                                      Mazda
-                                  </option>
-                                  <option>
-                                      Mercedes Benz
-                                  </option>
-                                  <option>
-                                      Mercury
-                                  </option>
-                                  <option>
-                                      MINI
-                                  </option>
-                                  <option>
-                                      Mitsubishi
-                                  </option>
-                                  <option>
-                                      Nissan
-                                  </option>
-                                  <option>
-                                      Oldsmobile
-                                  </option>
-                                  <option>
-                                      Plymouth
-                                  </option>
-                                  <option>
-                                      Pontiac
-                                  </option>
-                                  <option>
-                                      Porsche
-                                  </option>
-                                  <option>
-                                      Saab
-                                  </option>
-                                  <option>
-                                      Saturn
-                                  </option>
-                                  <option>
-                                      Scion
-                                  </option>
-                                  <option>
-                                      Subaru
-                                  </option>
-                                  <option>
-                                      Suzuki
-                                  </option>
-                                  <option>
-                                      Toyota
-                                  </option>
-                                  <option>
-                                      Volkswagen
-                                  </option>
-                                  <option>
-                                      Volvo
-                                  </option>
-
-                              </select>
-                          </div>
-
-                      </div>
-
-                      <div class="form-group">
-
-                          <label class="visually-hidden" for="vehicleYearID">Year</label>
-
-                          <div class="custom-select-wrapper">
-
-                              <div class="drop-down">
-                                  <span class="text">Year</span>
-                                  <span class="arrow"></span>
-                              </div>
-
-                              <select class="required custom form-control" id="vehicleYearID" name="vehicleYearID">
-                                  <option>
-                                      Year
-                                  </option>
-                                  <option>
-                                      Acura
-                                  </option>
-                                  <option>
-                                      Audi
-                                  </option>
-                                  <option>
-                                      BMW
-                                  </option>
-                                  <option>
-                                      Buick
-                                  </option>
-                                  <option>
-                                      Cadillac
-                                  </option>
-                                  <option>
-                                      Chevrolet
-                                  </option>
-                                  <option>
-                                      Chrysler
-                                  </option>
-                                  <option>
-                                      Dodge
-                                  </option>
-                                  <option>
-                                      Eagle
-                                  </option>
-                                  <option>
-                                      Fiat
-                                  </option>
-                                  <option>
-                                      Ford
-                                  </option>
-                                  <option>
-                                      Geo
-                                  </option>
-                                  <option>
-                                      GMC
-                                  </option>
-                                  <option>
-                                      Honda
-                                  </option>
-                                  <option>
-                                      Hummer
-                                  </option>
-                                  <option>
-                                      Hyundai
-                                  </option>
-                                  <option>
-                                      Infiniti
-                                  </option>
-                                  <option>
-                                      Isuzu
-                                  </option>
-                                  <option>
-                                      Jaguar
-                                  </option>
-                                  <option>
-                                      Jeep
-                                  </option>
-                                  <option>
-                                      Kia
-                                  </option>
-                                  <option>
-                                      Land Rover
-                                  </option>
-                                  <option>
-                                      Lexus
-                                  </option>
-                                  <option>
-                                      Lincoln
-                                  </option>
-                                  <option>
-                                      Mazda
-                                  </option>
-                                  <option>
-                                      Mercedes Benz
-                                  </option>
-                                  <option>
-                                      Mercury
-                                  </option>
-                                  <option>
-                                      MINI
-                                  </option>
-                                  <option>
-                                      Mitsubishi
-                                  </option>
-                                  <option>
-                                      Nissan
-                                  </option>
-                                  <option>
-                                      Oldsmobile
-                                  </option>
-                                  <option>
-                                      Plymouth
-                                  </option>
-                                  <option>
-                                      Pontiac
-                                  </option>
-                                  <option>
-                                      Porsche
-                                  </option>
-                                  <option>
-                                      Saab
-                                  </option>
-                                  <option>
-                                      Saturn
-                                  </option>
-                                  <option>
-                                      Scion
-                                  </option>
-                                  <option>
-                                      Subaru
-                                  </option>
-                                  <option>
-                                      Suzuki
-                                  </option>
-                                  <option>
-                                      Toyota
-                                  </option>
-                                  <option>
-                                      Volkswagen
-                                  </option>
-                                  <option>
-                                      Volvo
-                                  </option>
-
-                              </select>
-                          </div>
-
-                      </div>
-
-                      <div class="form-group">
-
-                          <label class="visually-hidden" for="vehicleMileageID">Mileage</label>
-
-                          <div class="custom-select-wrapper">
-
-                              <div class="drop-down">
-                                  <span class="text">Mileage</span>
-                                  <span class="arrow"></span>
-                              </div>
-
-                              <select class="required custom form-control" id="vehicleMileageID" name="vehicleMileageID">
-                                  <option>
-                                      Mileage
-                                  </option>
-                                  <option>
-                                      Acura
-                                  </option>
-                                  <option>
-                                      Audi
-                                  </option>
-                                  <option>
-                                      BMW
-                                  </option>
-                                  <option>
-                                      Buick
-                                  </option>
-                                  <option>
-                                      Cadillac
-                                  </option>
-                                  <option>
-                                      Chevrolet
-                                  </option>
-                                  <option>
-                                      Chrysler
-                                  </option>
-                                  <option>
-                                      Dodge
-                                  </option>
-                                  <option>
-                                      Eagle
-                                  </option>
-                                  <option>
-                                      Fiat
-                                  </option>
-                                  <option>
-                                      Ford
-                                  </option>
-                                  <option>
-                                      Geo
-                                  </option>
-                                  <option>
-                                      GMC
-                                  </option>
-                                  <option>
-                                      Honda
-                                  </option>
-                                  <option>
-                                      Hummer
-                                  </option>
-                                  <option>
-                                      Hyundai
-                                  </option>
-                                  <option>
-                                      Infiniti
-                                  </option>
-                                  <option>
-                                      Isuzu
-                                  </option>
-                                  <option>
-                                      Jaguar
-                                  </option>
-                                  <option>
-                                      Jeep
-                                  </option>
-                                  <option>
-                                      Kia
-                                  </option>
-                                  <option>
-                                      Land Rover
-                                  </option>
-                                  <option>
-                                      Lexus
-                                  </option>
-                                  <option>
-                                      Lincoln
-                                  </option>
-                                  <option>
-                                      Mazda
-                                  </option>
-                                  <option>
-                                      Mercedes Benz
-                                  </option>
-                                  <option>
-                                      Mercury
-                                  </option>
-                                  <option>
-                                      MINI
-                                  </option>
-                                  <option>
-                                      Mitsubishi
-                                  </option>
-                                  <option>
-                                      Nissan
-                                  </option>
-                                  <option>
-                                      Oldsmobile
-                                  </option>
-                                  <option>
-                                      Plymouth
-                                  </option>
-                                  <option>
-                                      Pontiac
-                                  </option>
-                                  <option>
-                                      Porsche
-                                  </option>
-                                  <option>
-                                      Saab
-                                  </option>
-                                  <option>
-                                      Saturn
-                                  </option>
-                                  <option>
-                                      Scion
-                                  </option>
-                                  <option>
-                                      Subaru
-                                  </option>
-                                  <option>
-                                      Suzuki
-                                  </option>
-                                  <option>
-                                      Toyota
-                                  </option>
-                                  <option>
-                                      Volkswagen
-                                  </option>
-                                  <option>
-                                      Volvo
-                                  </option>
-
-                              </select>
-                          </div>
-
-                      </div>
-
-                  </form>
-
-                <!--<input name="textfield" type="text" class="input-box" id="textfield" placeholder="NAME" />-->
-                <!--<br />-->
-                <!--<input name="textfield2" type="text" class="input-box" id="textfield2" placeholder="Phone" />-->
-                <!--<br />-->
-                <!--<input name="textfield3" type="text" class="input-box" id="textfield3" placeholder="Email" />-->
-                <!--<br />-->
-                <!--<input name="textfield4" type="text" class="input-box" id="textfield4" placeholder="Zip Code" />-->
-              </div>
-
-              <div class="form-bottom-box">
-
-                <a href="#" title="GET MY FREE QUOTE" class="button button-orange">GET MY FREE QUOTE <i class="fa fa-angle-right"></i></a><br />
-                *No credit card required
-
-              </div>
-
-          </div>
+            </div>
         </div>
-</div>
-<div class="clear"></div>
-</section>
-<div class="clear"></div>
+        <section id="welcome">
+            <div class="wrap-content zerogrid">
+                <div class="welcome-inside">
+                    <div class="welcome-left">
+                        <h1 class="styleFontface lowercase">Compare Auto Warranty <br/>
+                            Quotes For <span class="underline uppercase">Free</span></h1>
 
-<div class="body-title-box">
+                        <!--<div class="subnav">-->
 
-     <div class="wrap-content zerogrid">
+                        <!--<ul>-->
+                        <!--<li>-->
+                        <!--<h2 class="styleFontface">Personalized coverage plans</h2>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                        <!--<h2 class="styleFontface">Match you with AAA rated warranty providers</h2>-->
+                        <!--</li>-->
+                        <!--</ul>-->
 
-        <div class="body-title-inside">
+                        <!--</div>-->
 
-          <div class="body-title-left">
+                    </div>
+                    <div class="form-box orange animated fadeIn">
 
-              <h4 class="styleFontface">The best Auto Warranty coverage at the lowest rates</h4>
+                        <div class="form-title">
+                            <h2 class="styleFontface">START HERE!</h2>
+                            GET A QUOTE FOR YOUR MAKE AND MODEL.
+                        </div>
 
-              <p>Peace of mind knowing your vehicle has bumper to bumper coverage.</p>
+                        <div class="form-inside">
 
-          </div>
+                            <form action="/" method="POST">
 
-          <div class="body-title-right">
+                                <div class="form-group">
 
-              <div class="container-fluid">
+                                    <label class="visually-hidden" for="vehicleMakeID">Make</label>
 
-                  <div class="row equal">
+                                    <div class="custom-select-wrapper">
 
-                      <div class="col-sm-6 col-xs-6">
-                          <div class="col-md-12 auto-feature">
-                              <span class="eicon-ac"></span>
-                              <span class="icon-text">Air Conditioner</span>
-                          </div>
-                      </div>
+                                        <div class="drop-down">
+                                            <span class="text">Make</span>
+                                            <span class="arrow"></span>
+                                        </div>
 
-                      <div class="col-sm-6 col-xs-6">
-                          <div class="col-md-12 auto-feature">
-                              <span class="eicon-brakes"></span>
-                              <span class="icon-text">Brakes</span>
-                          </div>
-                      </div>
+                                        <select class="required custom form-control" id="vehicleMakeID"
+                                                name="vehicleMakeID">
+                                            <option>
+                                                Make
+                                            </option>
+                                            <option>
+                                                Acura
+                                            </option>
+                                            <option>
+                                                Audi
+                                            </option>
+                                            <option>
+                                                BMW
+                                            </option>
+                                            <option>
+                                                Buick
+                                            </option>
+                                            <option>
+                                                Cadillac
+                                            </option>
+                                            <option>
+                                                Chevrolet
+                                            </option>
+                                            <option>
+                                                Chrysler
+                                            </option>
+                                            <option>
+                                                Dodge
+                                            </option>
+                                            <option>
+                                                Eagle
+                                            </option>
+                                            <option>
+                                                Fiat
+                                            </option>
+                                            <option>
+                                                Ford
+                                            </option>
+                                            <option>
+                                                Geo
+                                            </option>
+                                            <option>
+                                                GMC
+                                            </option>
+                                            <option>
+                                                Honda
+                                            </option>
+                                            <option>
+                                                Hummer
+                                            </option>
+                                            <option>
+                                                Hyundai
+                                            </option>
+                                            <option>
+                                                Infiniti
+                                            </option>
+                                            <option>
+                                                Isuzu
+                                            </option>
+                                            <option>
+                                                Jaguar
+                                            </option>
+                                            <option>
+                                                Jeep
+                                            </option>
+                                            <option>
+                                                Kia
+                                            </option>
+                                            <option>
+                                                Land Rover
+                                            </option>
+                                            <option>
+                                                Lexus
+                                            </option>
+                                            <option>
+                                                Lincoln
+                                            </option>
+                                            <option>
+                                                Mazda
+                                            </option>
+                                            <option>
+                                                Mercedes Benz
+                                            </option>
+                                            <option>
+                                                Mercury
+                                            </option>
+                                            <option>
+                                                MINI
+                                            </option>
+                                            <option>
+                                                Mitsubishi
+                                            </option>
+                                            <option>
+                                                Nissan
+                                            </option>
+                                            <option>
+                                                Oldsmobile
+                                            </option>
+                                            <option>
+                                                Plymouth
+                                            </option>
+                                            <option>
+                                                Pontiac
+                                            </option>
+                                            <option>
+                                                Porsche
+                                            </option>
+                                            <option>
+                                                Saab
+                                            </option>
+                                            <option>
+                                                Saturn
+                                            </option>
+                                            <option>
+                                                Scion
+                                            </option>
+                                            <option>
+                                                Subaru
+                                            </option>
+                                            <option>
+                                                Suzuki
+                                            </option>
+                                            <option>
+                                                Toyota
+                                            </option>
+                                            <option>
+                                                Volkswagen
+                                            </option>
+                                            <option>
+                                                Volvo
+                                            </option>
 
-                      <div class="col-sm-6 col-xs-6 auto-feature-row">
-                          <div class="col-md-12 auto-feature">
-                              <span class="eicon-drive-axle"></span>
-                              <span class="icon-text">Drive Axle Assembly</span>
-                          </div>
-                      </div>
+                                        </select>
+                                    </div>
 
-                      <div class="col-sm-6 col-xs-6 auto-feature-row">
-                          <div class="col-md-12 auto-feature">
-                              <span class="eicon-electrical"></span>
-                              <span class="icon-text">Electrical Components</span>
-                          </div>
-                      </div>
+                                </div>
 
-                      <div class="col-sm-6 col-xs-6 auto-feature-row">
-                          <div class="col-md-12 auto-feature">
-                              <span class="eicon-engine"></span>
-                              <span class="icon-text">Engine</span>
-                          </div>
-                      </div>
+                                <div class="form-group">
 
-                      <div class="col-sm-6 col-xs-6 auto-feature-row">
-                          <div class="col-md-12 auto-feature">
-                              <span class="eicon-suspension"></span>
-                              <span class="icon-text">Front & Rear Suspension</span>
-                          </div>
-                      </div>
+                                    <label class="visually-hidden" for="vehicleModelId">Model</label>
 
-                      <div class="col-sm-6 col-xs-6 auto-feature-row">
-                          <div class="col-md-12 auto-feature">
-                              <span class="eicon-fuel"></span>
-                              <span class="icon-text">Fuel System</span>
-                          </div>
-                      </div>
+                                    <div class="custom-select-wrapper">
 
-                      <div class="col-sm-6 col-xs-6 auto-feature-row">
-                          <div class="col-md-12 auto-feature">
-                              <span class="eicon-transmission"></span>
-                              <span class="icon-text">Transmission</span>
-                          </div>
-                      </div>
+                                        <div class="drop-down">
+                                            <span class="text">Model</span>
+                                            <span class="arrow"></span>
+                                        </div>
 
-                  </div>
+                                        <select class="required custom form-control" id="vehicleModelId"
+                                                name="vehicleModelId">
+                                            <option>
+                                                Model
+                                            </option>
+                                            <option>
+                                                Acura
+                                            </option>
+                                            <option>
+                                                Audi
+                                            </option>
+                                            <option>
+                                                BMW
+                                            </option>
+                                            <option>
+                                                Buick
+                                            </option>
+                                            <option>
+                                                Cadillac
+                                            </option>
+                                            <option>
+                                                Chevrolet
+                                            </option>
+                                            <option>
+                                                Chrysler
+                                            </option>
+                                            <option>
+                                                Dodge
+                                            </option>
+                                            <option>
+                                                Eagle
+                                            </option>
+                                            <option>
+                                                Fiat
+                                            </option>
+                                            <option>
+                                                Ford
+                                            </option>
+                                            <option>
+                                                Geo
+                                            </option>
+                                            <option>
+                                                GMC
+                                            </option>
+                                            <option>
+                                                Honda
+                                            </option>
+                                            <option>
+                                                Hummer
+                                            </option>
+                                            <option>
+                                                Hyundai
+                                            </option>
+                                            <option>
+                                                Infiniti
+                                            </option>
+                                            <option>
+                                                Isuzu
+                                            </option>
+                                            <option>
+                                                Jaguar
+                                            </option>
+                                            <option>
+                                                Jeep
+                                            </option>
+                                            <option>
+                                                Kia
+                                            </option>
+                                            <option>
+                                                Land Rover
+                                            </option>
+                                            <option>
+                                                Lexus
+                                            </option>
+                                            <option>
+                                                Lincoln
+                                            </option>
+                                            <option>
+                                                Mazda
+                                            </option>
+                                            <option>
+                                                Mercedes Benz
+                                            </option>
+                                            <option>
+                                                Mercury
+                                            </option>
+                                            <option>
+                                                MINI
+                                            </option>
+                                            <option>
+                                                Mitsubishi
+                                            </option>
+                                            <option>
+                                                Nissan
+                                            </option>
+                                            <option>
+                                                Oldsmobile
+                                            </option>
+                                            <option>
+                                                Plymouth
+                                            </option>
+                                            <option>
+                                                Pontiac
+                                            </option>
+                                            <option>
+                                                Porsche
+                                            </option>
+                                            <option>
+                                                Saab
+                                            </option>
+                                            <option>
+                                                Saturn
+                                            </option>
+                                            <option>
+                                                Scion
+                                            </option>
+                                            <option>
+                                                Subaru
+                                            </option>
+                                            <option>
+                                                Suzuki
+                                            </option>
+                                            <option>
+                                                Toyota
+                                            </option>
+                                            <option>
+                                                Volkswagen
+                                            </option>
+                                            <option>
+                                                Volvo
+                                            </option>
 
-              </div>
+                                        </select>
+                                    </div>
 
-          </div>
+                                </div>
 
-        </div>
+                                <div class="form-group">
 
-      </div>
+                                    <label class="visually-hidden" for="vehicleYearID">Year</label>
 
-    </div>
+                                    <div class="custom-select-wrapper">
 
-    <div class="clear"></div>
+                                        <div class="drop-down">
+                                            <span class="text">Year</span>
+                                            <span class="arrow"></span>
+                                        </div>
 
-    <div class="content-box">
+                                        <select class="required custom form-control" id="vehicleYearID"
+                                                name="vehicleYearID">
+                                            <option>
+                                                Year
+                                            </option>
+                                            <option>
+                                                Acura
+                                            </option>
+                                            <option>
+                                                Audi
+                                            </option>
+                                            <option>
+                                                BMW
+                                            </option>
+                                            <option>
+                                                Buick
+                                            </option>
+                                            <option>
+                                                Cadillac
+                                            </option>
+                                            <option>
+                                                Chevrolet
+                                            </option>
+                                            <option>
+                                                Chrysler
+                                            </option>
+                                            <option>
+                                                Dodge
+                                            </option>
+                                            <option>
+                                                Eagle
+                                            </option>
+                                            <option>
+                                                Fiat
+                                            </option>
+                                            <option>
+                                                Ford
+                                            </option>
+                                            <option>
+                                                Geo
+                                            </option>
+                                            <option>
+                                                GMC
+                                            </option>
+                                            <option>
+                                                Honda
+                                            </option>
+                                            <option>
+                                                Hummer
+                                            </option>
+                                            <option>
+                                                Hyundai
+                                            </option>
+                                            <option>
+                                                Infiniti
+                                            </option>
+                                            <option>
+                                                Isuzu
+                                            </option>
+                                            <option>
+                                                Jaguar
+                                            </option>
+                                            <option>
+                                                Jeep
+                                            </option>
+                                            <option>
+                                                Kia
+                                            </option>
+                                            <option>
+                                                Land Rover
+                                            </option>
+                                            <option>
+                                                Lexus
+                                            </option>
+                                            <option>
+                                                Lincoln
+                                            </option>
+                                            <option>
+                                                Mazda
+                                            </option>
+                                            <option>
+                                                Mercedes Benz
+                                            </option>
+                                            <option>
+                                                Mercury
+                                            </option>
+                                            <option>
+                                                MINI
+                                            </option>
+                                            <option>
+                                                Mitsubishi
+                                            </option>
+                                            <option>
+                                                Nissan
+                                            </option>
+                                            <option>
+                                                Oldsmobile
+                                            </option>
+                                            <option>
+                                                Plymouth
+                                            </option>
+                                            <option>
+                                                Pontiac
+                                            </option>
+                                            <option>
+                                                Porsche
+                                            </option>
+                                            <option>
+                                                Saab
+                                            </option>
+                                            <option>
+                                                Saturn
+                                            </option>
+                                            <option>
+                                                Scion
+                                            </option>
+                                            <option>
+                                                Subaru
+                                            </option>
+                                            <option>
+                                                Suzuki
+                                            </option>
+                                            <option>
+                                                Toyota
+                                            </option>
+                                            <option>
+                                                Volkswagen
+                                            </option>
+                                            <option>
+                                                Volvo
+                                            </option>
 
-       <div class="wrap-content zerogrid">
+                                        </select>
+                                    </div>
 
-        <div class="content-inside">
+                                </div>
 
-          <div class="content-left">
+                                <div class="form-group">
 
-              <img src="images/3x/Artboard%202@3x.png" class="img-responsive" alt="" />
+                                    <label class="visually-hidden" for="vehicleMileageID">Mileage</label>
 
-          </div>
+                                    <div class="custom-select-wrapper">
 
-            <div class="content-right">
+                                        <div class="drop-down">
+                                            <span class="text">Mileage</span>
+                                            <span class="arrow"></span>
+                                        </div>
 
-                <h2 class="styleFontface">Protect yourself & your car</h2>
+                                        <select class="required custom form-control" id="vehicleMileageID"
+                                                name="vehicleMileageID">
+                                            <option>
+                                                Mileage
+                                            </option>
+                                            <option>
+                                                Acura
+                                            </option>
+                                            <option>
+                                                Audi
+                                            </option>
+                                            <option>
+                                                BMW
+                                            </option>
+                                            <option>
+                                                Buick
+                                            </option>
+                                            <option>
+                                                Cadillac
+                                            </option>
+                                            <option>
+                                                Chevrolet
+                                            </option>
+                                            <option>
+                                                Chrysler
+                                            </option>
+                                            <option>
+                                                Dodge
+                                            </option>
+                                            <option>
+                                                Eagle
+                                            </option>
+                                            <option>
+                                                Fiat
+                                            </option>
+                                            <option>
+                                                Ford
+                                            </option>
+                                            <option>
+                                                Geo
+                                            </option>
+                                            <option>
+                                                GMC
+                                            </option>
+                                            <option>
+                                                Honda
+                                            </option>
+                                            <option>
+                                                Hummer
+                                            </option>
+                                            <option>
+                                                Hyundai
+                                            </option>
+                                            <option>
+                                                Infiniti
+                                            </option>
+                                            <option>
+                                                Isuzu
+                                            </option>
+                                            <option>
+                                                Jaguar
+                                            </option>
+                                            <option>
+                                                Jeep
+                                            </option>
+                                            <option>
+                                                Kia
+                                            </option>
+                                            <option>
+                                                Land Rover
+                                            </option>
+                                            <option>
+                                                Lexus
+                                            </option>
+                                            <option>
+                                                Lincoln
+                                            </option>
+                                            <option>
+                                                Mazda
+                                            </option>
+                                            <option>
+                                                Mercedes Benz
+                                            </option>
+                                            <option>
+                                                Mercury
+                                            </option>
+                                            <option>
+                                                MINI
+                                            </option>
+                                            <option>
+                                                Mitsubishi
+                                            </option>
+                                            <option>
+                                                Nissan
+                                            </option>
+                                            <option>
+                                                Oldsmobile
+                                            </option>
+                                            <option>
+                                                Plymouth
+                                            </option>
+                                            <option>
+                                                Pontiac
+                                            </option>
+                                            <option>
+                                                Porsche
+                                            </option>
+                                            <option>
+                                                Saab
+                                            </option>
+                                            <option>
+                                                Saturn
+                                            </option>
+                                            <option>
+                                                Scion
+                                            </option>
+                                            <option>
+                                                Subaru
+                                            </option>
+                                            <option>
+                                                Suzuki
+                                            </option>
+                                            <option>
+                                                Toyota
+                                            </option>
+                                            <option>
+                                                Volkswagen
+                                            </option>
+                                            <option>
+                                                Volvo
+                                            </option>
 
-                <p>When your vehicle’s factory warranty expires, you're in charge of fixing any mechanical breakdowns that may occur. That could mean spending large sums of money on auto repairs.</p>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                            <!--<input name="textfield" type="text" class="input-box" id="textfield" placeholder="NAME" />-->
+                            <!--<br />-->
+                            <!--<input name="textfield2" type="text" class="input-box" id="textfield2" placeholder="Phone" />-->
+                            <!--<br />-->
+                            <!--<input name="textfield3" type="text" class="input-box" id="textfield3" placeholder="Email" />-->
+                            <!--<br />-->
+                            <!--<input name="textfield4" type="text" class="input-box" id="textfield4" placeholder="Zip Code" />-->
+                        </div>
+
+                        <div class="form-bottom-box">
+
+                            <a href="#" title="GET MY FREE QUOTE" class="button button-orange">GET MY FREE QUOTE <i
+                                    class="fa fa-angle-right"></i></a><br/>
+                            *No credit card required
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <div class="clear"></div>
+
+        <div class="body-title-box">
+
+            <div class="wrap-content zerogrid">
+
+                <div class="body-title-inside">
+
+                    <div class="body-title-left">
+
+                        <h4 class="styleFontface">The best Auto Warranty coverage at the lowest rates</h4>
+
+                        <p>Peace of mind knowing your vehicle has bumper to bumper coverage.</p>
+
+                    </div>
+
+                    <div class="body-title-right">
+
+                        <div class="container-fluid">
+
+                            <div class="row equal">
+
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="col-md-12 auto-feature">
+                                        <span class="eicon-ac"></span>
+                                        <span class="icon-text">Air Conditioner</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="col-md-12 auto-feature">
+                                        <span class="eicon-brakes"></span>
+                                        <span class="icon-text">Brakes</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-6 auto-feature-row">
+                                    <div class="col-md-12 auto-feature">
+                                        <span class="eicon-drive-axle"></span>
+                                        <span class="icon-text">Drive Axle Assembly</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-6 auto-feature-row">
+                                    <div class="col-md-12 auto-feature">
+                                        <span class="eicon-electrical"></span>
+                                        <span class="icon-text">Electrical Components</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-6 auto-feature-row">
+                                    <div class="col-md-12 auto-feature">
+                                        <span class="eicon-engine"></span>
+                                        <span class="icon-text">Engine</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-6 auto-feature-row">
+                                    <div class="col-md-12 auto-feature">
+                                        <span class="eicon-suspension"></span>
+                                        <span class="icon-text">Front & Rear Suspension</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-6 auto-feature-row">
+                                    <div class="col-md-12 auto-feature">
+                                        <span class="eicon-fuel"></span>
+                                        <span class="icon-text">Fuel System</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xs-6 auto-feature-row">
+                                    <div class="col-md-12 auto-feature">
+                                        <span class="eicon-transmission"></span>
+                                        <span class="icon-text">Transmission</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-<div class="services-box">
-      <div class="wrap-content zerogrid">
-        <div class="services">
-        <ul>
-        <li style="padding-left:0%;">
-          <h3 class="styleFontface">Why Us?</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting.<br /><br />
-         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </li>
-        <li>
-          <h3 class="styleFontface">Awesome Features</h3>
-          <div class="feature">
-          <ul>
-          <li>• Lorem Ipsum is simply dummy</li>
-          <li>• Text of the printing and typesetting</li>
-          <li>• Lorem Ipsum has been the</li>
-          <li>• Standard dummy text ever since</li>
-          <li>• Scrambled it to make a type</li>
-          <li>• It was popularised in the 1960s</li>
-          </ul>
-          </div>
-        </li>
-        <li style="padding-right:0%; background-image:none;">
-          <h3 class="styleFontface">About Warranty</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry's standard dummy text ever since.<br /><br />
-          The 1500s, when an unknown printer took a galley of type.</p>
-        </li>
-        </ul>
+
+        <div class="clear"></div>
+
+        <div class="content-box">
+
+            <div class="wrap-content zerogrid">
+
+                <div class="content-inside">
+
+                    <div class="content-left">
+
+                        <img src="images/3x/Artboard%202@3x.png" class="img-responsive" alt=""/>
+
+                    </div>
+
+                    <div class="content-right">
+
+                        <h2 class="styleFontface">Protect yourself & your car</h2>
+
+                        <p>When your vehicle’s factory warranty expires, you're in charge of fixing any mechanical
+                            breakdowns that may occur. That could mean spending large sums of money on auto repairs.</p>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-
-    <div class="content-box content-box-last">
-
-      <div class="wrap-content zerogrid">
-        <div class="content-inside">
-
-        <div class="content-middle-right">
-
-            <img src="images/3x/Illustration%203@3x.png" class="img-responsive limited-width" alt=""/>
-            <!--<img src="images/car-bg2.jpg" alt="" />-->
-
+        <div class="clear"></div>
+        <div class="services-box">
+            <div class="wrap-content zerogrid">
+                <div class="services">
+                    <ul>
+                        <li style="padding-left:0%;">
+                            <h3 class="styleFontface">Why Us?</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting.<br/><br/>
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </li>
+                        <li>
+                            <h3 class="styleFontface">Awesome Features</h3>
+                            <div class="feature">
+                                <ul>
+                                    <li>• Lorem Ipsum is simply dummy</li>
+                                    <li>• Text of the printing and typesetting</li>
+                                    <li>• Lorem Ipsum has been the</li>
+                                    <li>• Standard dummy text ever since</li>
+                                    <li>• Scrambled it to make a type</li>
+                                    <li>• It was popularised in the 1960s</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li style="padding-right:0%; background-image:none;">
+                            <h3 class="styleFontface">About Warranty</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been
+                                the industry's standard dummy text ever since.<br/><br/>
+                                The 1500s, when an unknown printer took a galley of type.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+        <div class="clear"></div>
 
-          <div class="content-middle-left">
-            <h2 class="styleFontface">Reliability matters,<br />
-              Best Prices Always</h2>
-              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br /><br />
-             If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum 
-            generators on the Internet tend to repeat predefined chunks.</p>
-          </div>
+        <div class="content-box content-box-last">
+
+            <div class="wrap-content zerogrid">
+                <div class="content-inside">
+
+                    <div class="content-middle-right">
+
+                        <img src="images/3x/Illustration%203@3x.png" class="img-responsive limited-width" alt=""/>
+                        <!--<img src="images/car-bg2.jpg" alt="" />-->
+
+                    </div>
+
+                    <div class="content-middle-left">
+                        <h2 class="styleFontface">Reliability matters,<br/>
+                            Best Prices Always</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered.<br/><br/>
+                            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+                            embarrassing hidden in the middle of text. All the Lorem Ipsum
+                            generators on the Internet tend to repeat predefined chunks.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="clear"></div>
+        <div class="clear"></div>
 
-    <!--<div class="feature-box">-->
-      <!--<div class="wrap-content zerogrid">-->
+        <!--<div class="feature-box">-->
+        <!--<div class="wrap-content zerogrid">-->
         <!--<div class="feature-inside">-->
         <!--<ul>-->
         <!--<li>-->
-          <!--<h3 class="styleFontface">Useful info</h3>-->
-          <!--<div class="feature">-->
-          <!--<ul>-->
-          <!--<li class="text">• Lorem Ipsum is simply dummy</li>-->
-          <!--<li class="text">• Text of the printing and typesetting</li>-->
-          <!--<li class="text">• Lorem Ipsum has been the</li>-->
-          <!--<li class="text">• Standard dummy text ever since</li>-->
-          <!--<li class="text">• Scrambled it to make a type</li>-->
-          <!--<li class="text">• It was popularised in the 1960s</li>-->
-          <!--</ul>-->
-          <!--</div>-->
+        <!--<h3 class="styleFontface">Useful info</h3>-->
+        <!--<div class="feature">-->
+        <!--<ul>-->
+        <!--<li class="text">• Lorem Ipsum is simply dummy</li>-->
+        <!--<li class="text">• Text of the printing and typesetting</li>-->
+        <!--<li class="text">• Lorem Ipsum has been the</li>-->
+        <!--<li class="text">• Standard dummy text ever since</li>-->
+        <!--<li class="text">• Scrambled it to make a type</li>-->
+        <!--<li class="text">• It was popularised in the 1960s</li>-->
+        <!--</ul>-->
+        <!--</div>-->
         <!--</li>-->
         <!--<li><img src="images/feature-bg.jpg" alt=""/></li>-->
         <!--<li style="margin-right:0px;">-->
-          <!--<h2 class="styleFontface">Contrary to popular<br />-->
-            <!--Lorem Ipsum is not simply</h2>-->
-            <!--<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.-->
-             <!--It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.</p>-->
+        <!--<h2 class="styleFontface">Contrary to popular<br />-->
+        <!--Lorem Ipsum is not simply</h2>-->
+        <!--<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.-->
+        <!--It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.</p>-->
         <!--</li>-->
         <!--</ul>-->
         <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--<div class="clear"></div>-->
-    <!--<div class="testimonial-box">-->
-      <!--<div class="wrap-content zerogrid">-->
-        <!--<div class="testimonial-inside">-->
-          <!--<h2 class="styleFontface">&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text -->
-          <!--ever since the 1500s. &quot;<br />-->
-          <!--<span style="font-size:24px; line-height:50px; color: #0a81df;">DONALD WRIGHT</span></h2>-->
         <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
+        <!--<div class="testimonial-box">-->
+        <!--<div class="wrap-content zerogrid">-->
+        <!--<div class="testimonial-inside">-->
+        <!--<h2 class="styleFontface">&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text -->
+        <!--ever since the 1500s. &quot;<br />-->
+        <!--<span style="font-size:24px; line-height:50px; color: #0a81df;">DONALD WRIGHT</span></h2>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="clear"></div>-->
 
-  </section>
-  <div class="clear"></div>
-  <footer>
-
-    <!--<div class="wrap-footer zerogrid">-->
-
-      <div class="footer-main-box text-center">
-
-          <div class="container">
-
-              <div class="row clearfix">
-                  <img src="images/logo.png" class="footer-logo"/>
-              </div>
-
-              <div class="row clearfix">
-
-                  <div class="col-md-6">
-
-                      <div class="pull-left">
-
-                          <div class="footer-links">
-
-                              <a href="/">Home</a>
-
-                              <span></span>
-
-                              <a href="/blog">Blog</a>
-
-                              <span></span>
-
-                              <a href="/privacy">Privacy Policy</a>
-
-                          </div>
-
-                      </div>
-
-                  </div>
-
-                  <div class="col-md-6">
-                      <div class="pull-right">
-                          <span class="copyright">&copy;2018 AutoShield. All Rights Reserved</span>
-                      </div>
-                  </div>
-
-              </div>
-
-              <hr>
-
-              <!-- Terms Start -->
-              <div class="row clearfix">
-
-                  <div class="col-md-12">
-
-                          <div class="footer-terms">
-
-                              <p>AutoShield is a 3rd party and by submitting this inquiry it is understood that you will be matched with and contacted by a preferred vehicle specialist.</p>
-
-                              <p>If your manufacturer’s auto warranty or dealer’s extended auto warranty has expired or is about to expire and you are now looking for extended vehicle coverage through a new vehicle service contract, please do not hesitate to inquire on this form for a FREE quote.</p>
-
-                              <p>Whether your vehicle is a new or used car there are available car coverage plans to protect you from spending thousands on future repair bills. Mechanical, Electrical and Engine issues can all be unexpected costly expenses without having a vehicle protection plan.</p>
-
-                              <p>You are eligible for auto repair bill coverage if your vehicle is of domestic make (examples: Ford, GMC, Dodge, Chrysler, Pontiac, Buick, Oldsmobile, Chevrolet, Lincoln, Jeep, etc) or foreign make (examples: BMW, Honda, Toyota, Lexus, Volvo, Nissan, Mazda, Mitsubishi, Suzuki, Mercedes Benz, Hyundai, Kia, Volkswagen, Audi, Acura, etc).</p>
-
-                          </div>
-
-
-                  </div>
-
-              </div>
-              <!-- Terms End -->
-          </div>
-
-
-      </div>
-
-    <!--</div>-->
-
+    </section>
     <div class="clear"></div>
+    <footer>
+
+        <!--<div class="wrap-footer zerogrid">-->
+
+        <div class="footer-main-box text-center">
+
+            <div class="container">
+
+                <div class="row clearfix">
+                    <img src="images/logo.png" class="footer-logo"/>
+                </div>
+
+                <div class="row clearfix">
+
+                    <div class="col-md-6">
+
+                        <div class="pull-left">
+
+                            <div class="footer-links">
+
+                                <a href="/">Home</a>
+
+                                <span></span>
+
+                                <a href="/blog">Blog</a>
+
+                                <span></span>
+
+                                <a href="/privacy">Privacy Policy</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="pull-right">
+                            <span class="copyright">&copy;2018 AutoShield. All Rights Reserved</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- Terms Start -->
+                <div class="row clearfix">
+
+                    <div class="col-md-12">
+
+                        <div class="footer-terms">
+
+                            <p>AutoShield is a 3rd party and by submitting this inquiry it is understood that you will
+                                be matched with and contacted by a preferred vehicle specialist.</p>
+
+                            <p>If your manufacturer’s auto warranty or dealer’s extended auto warranty has expired or is
+                                about to expire and you are now looking for extended vehicle coverage through a new
+                                vehicle service contract, please do not hesitate to inquire on this form for a FREE
+                                quote.</p>
+
+                            <p>Whether your vehicle is a new or used car there are available car coverage plans to
+                                protect you from spending thousands on future repair bills. Mechanical, Electrical and
+                                Engine issues can all be unexpected costly expenses without having a vehicle protection
+                                plan.</p>
+
+                            <p>You are eligible for auto repair bill coverage if your vehicle is of domestic make
+                                (examples: Ford, GMC, Dodge, Chrysler, Pontiac, Buick, Oldsmobile, Chevrolet, Lincoln,
+                                Jeep, etc) or foreign make (examples: BMW, Honda, Toyota, Lexus, Volvo, Nissan, Mazda,
+                                Mitsubishi, Suzuki, Mercedes Benz, Hyundai, Kia, Volkswagen, Audi, Acura, etc).</p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!-- Terms End -->
+            </div>
+
+
+        </div>
+
+        <!--</div>-->
+
+        <div class="clear"></div>
 
     </footer>
 </div>
@@ -1246,34 +1318,36 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
 
 <script type="text/javascript">
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         // make sure auto feature boxes are all the same size
-        var resizeAutoFeatures = function() {
+        var resizeAutoFeatures = function () {
 
             var biggestHeight = 0;
             var resize = false;
 
-            $('.auto-feature').each(function(index, element) {
+            $('.auto-feature').each(function (index, element) {
                 var el = $(element);
-                if(el.height() > biggestHeight) {
-                    if(biggestHeight > 0) {
+                if (el.height() > biggestHeight) {
+                    if (biggestHeight > 0) {
                         resize = true;
                     }
                     biggestHeight = el.height()
                 }
             });
 
-            if(!resize)
+            if (!resize)
                 return;
 
             console.log('resizing to: [' + biggestHeight + ']');
-            $('.auto-feature').each(function(index, element) {
+            $('.auto-feature').each(function (index, element) {
                 $(element).height(biggestHeight);
             });
         };
