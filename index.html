@@ -108,10 +108,16 @@
             .content-box-last {
                 padding-bottom:0;
             }
+            img.limited-width {
+                max-width: 500px;
+            }
 
             @media only screen and (min-width: 480px) and (max-width: 960px) {
                 .content-box-last {
                     padding-bottom: 80px;
+                }
+                img.limited-width {
+                    max-width: 100%;
                 }
             }
             @media only screen and (max-width: 479px) and (min-width: 300px) {
@@ -121,6 +127,9 @@
                 }
                 .content-box-last {
                     padding-bottom: 80px;
+                }
+                img.limited-width {
+                    max-width: 100%;
                 }
             }
 
@@ -350,7 +359,7 @@
 
         <div class="content-middle-right">
 
-            <img src="images/3x/Illustration%203@3x.png" class="img-responsive" alt="" style="max-width: 500px"/>
+            <img src="images/3x/Illustration%203@3x.png" class="img-responsive limited-width" alt=""/>
             <!--<img src="images/car-bg2.jpg" alt="" />-->
 
         </div>
