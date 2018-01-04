@@ -1327,6 +1327,8 @@
 
     $(document).ready(function () {
 
+        var printedHeightsOnce = false;
+
         // make sure auto feature boxes are all the same size
         var resizeAutoFeatures = function () {
 
@@ -1335,6 +1337,11 @@
 
             $('.auto-feature').each(function (index, element) {
                 var el = $(element);
+
+                if(!printedHeightsOnce) {
+                    console.log("[" + index.toString() + "]: " + el.height());
+                }
+
                 if (el.height() > biggestHeight) {
                     if (biggestHeight > 0) {
                         resize = true;
@@ -1342,6 +1349,10 @@
                     biggestHeight = el.height()
                 }
             });
+
+            if(!printedHeightsOnce) {
+                printedHeightsOnce = true;
+            }
 
             if (!resize)
                 return;
