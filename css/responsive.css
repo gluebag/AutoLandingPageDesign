@@ -1,0 +1,179 @@
+html {
+   -webkit-text-size-adjust: none;
+}
+.video embed,
+.video object,
+.video iframe {
+   width: 100%;
+   height: auto;
+}
+img{
+	max-width:100%;
+	height: auto;
+   	width: auto\9; /* ie8 */
+}
+@media only screen and (min-width: 960px) and (max-width: 1000px) {
+	.zerogrid{width:100%;}
+	.top-inside{ width:98%; height:auto; margin-left:1%; margin-right:1%; float:left;} 
+	.welcome-inside{ width:98%; height:auto; margin-left:1%; margin-right:1%; float:left; text-align:left; padding-right:0%;}
+	.form-box { width:31%;}
+	.body-title-inside{ width:98%; height:auto; margin-left:1%; margin-right:1%; float:left;} 
+	.content-inside{ width:98%; height:auto; margin-left:1%; margin-right:1%; float:left;}
+	.services { width:98%; height:auto; margin-left:1%; margin-right:1%; float:left;}
+	.testimonial-inside { width:98%; height:auto; margin-left:1%; margin-right:1%; float:left;}
+	.feature-inside { width:98%; height:auto; margin-left:1%; margin-right:1%; float:left;}
+	.footer-main-box{ width:98%; height:auto; margin-left:1%; margin-right:1%; float:left;}
+	h1.styleFontface { font-size:67px; line-height:74px;}
+	h4.styleFontface { font-size:48px; line-height:54px;}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 960px) {
+	.zerogrid{width:100%;}
+	.top-inside { width:98%; text-align:center; margin-left:1%; margin-right:1%;}
+	.top-left { width:48%;}
+	
+ .welcome-inside { width:98%; text-align:left; padding-left:1%; padding-right:1%;}
+ .form-box { width:36%;}
+ .form-title { text-align:center;}
+  .form-title h2.styleFontface { font-size:50px; line-height:54px; letter-spacing:0px;}
+ .welcome-left { width:60%; text-align:left; padding-top:30px;}
+ 
+ .body-title-inside { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+  .body-title-left { width:100%; text-align:center;} .body-title-left p { text-align:center;}
+ .body-title-right { width:100%; text-align:center; padding-top:30px;} .body-title-right p { text-align:center;}
+ 
+ .services-box { width:100%; padding-top:70px; padding-bottom:66px;}
+ .services { width:96%; height:auto; padding-left:2%; padding-right:2%; float:left;} .services ul {margin:0px; padding:0px; list-style-type:none;} 
+.services ul li { width:42%; float:left; margin-right:4%; margin-left:4%; padding-left:0%; padding-right:0%; background-image:none; display:block;  margin-bottom:36px;
+ text-align:center; padding-top:0px; padding-bottom:0px;}
+	.services ul li:last-child { width:42%; padding-top:0px; padding-bottom:0px; text-align:center; margin-left:29%; margin-right:29%; padding-left:0%; padding-right:0%; 
+	background-image:none; margin-bottom:0px;} .services ul li p { text-align:center;}
+	.feature ul li { padding-bottom:0px; width:100%; margin-left:0%; margin-right:0%; margin-bottom:0px;}
+	.feature ul li:last-child { padding-bottom:0px; width:100%; margin-left:0%; margin-right:0%; margin-bottom:0px;}
+
+.content-title { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+	.content-inside { width:90%; margin-left:5%; margin-right:5%; float:left; text-align:center;}
+	 .content-left{ width:100%; text-align:center;}   
+	 	.content-right{ width:100%; text-align:center;  padding-top:24px;}  .content-right p { text-align:center;}
+		
+			 .content-middle-left{ width:100%; text-align:center; padding-top:24px; } .content-middle-left p { text-align:center;}
+	 	.content-middle-right{ width:100%; text-align:center;} 
+
+ .feature-inside { width:96%; height:auto; padding-left:2%; padding-right:2%; float:left;} .feature-inside ul {margin:0px; padding:0px; list-style-type:none;} 
+		.feature-inside ul li { width:42%; float:left; margin-right:4%; margin-left:4%; display:block;  margin-bottom:40px; text-align:center;}
+	.feature-inside ul li:last-child { width:42%; text-align:center; margin-left:29%; margin-right:29%; margin-bottom:0px;} .feature-inside ul li p { text-align:center;}
+		.feature ul li { padding-bottom:0px; width:100%; margin-left:0%; margin-right:0%; margin-bottom:0px;}
+	.feature ul li:last-child { padding-bottom:0px; width:100%; margin-left:0%; margin-right:0%; margin-bottom:0px;}
+		
+.testimonial-inside { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+	 
+	.footer-main-box { width:96%; padding-left:2%; padding-right:2%; text-align:center;}
+	h1.styleFontface { font-size:54px; line-height:60px;}
+	h2.styleFontface { font-size:32px; line-height:36px;}
+	h3.styleFontface { font-size:32px; line-height:36px;}
+	h4.styleFontface { font-size:40px; line-height:48px;}
+	
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.zerogrid{width:100%;}
+	#content .top { height:auto;}
+	.top-inside { width:90%; height:auto; text-align:center; margin-left:5%; margin-right:5%;}
+	.top-left {width:100%; height: auto; text-align:center;} .top-right{ width:100%; text-align:center; padding-top:20px;}
+	
+	#welcome { height:auto; width:100%; float:left; text-align:center;}
+ .welcome-inside { width:90%; text-align:center; padding-left:5%; padding-right:5%; padding-top:40px;}
+ .welcome-left { width:100%; text-align:center; padding-top:0px; padding-left:0%;}
+ .subnav { width:85%; padding-left:15%;}
+ 
+ .form-box { width:66%; height:auto; margin-top:30px; margin-left:17%; margin-right:17%;}
+ .form-title { text-align:center;}
+ 
+.body-title-inside { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+
+ .body-title-left { width:100%; text-align:center;} .body-title-left p { text-align:center;}
+ .body-title-right { width:100%; text-align:center; padding-top:30px;} .body-title-right p { text-align:center;}
+ 
+ .services-box { width:100%; padding-top:70px; padding-bottom:26px;}
+.services { width:90%; margin-left:5%; margin-right:5%;} .services ul li { width:100%; text-align:center; padding-bottom:40px; padding-top:0px; padding-left:0%; padding-right:0%;
+background-image:none;} .services ul li p { text-align:center;}
+.feature ul li { padding-bottom:0px;}
+ 
+.content-title { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+	.content-inside { width:90%; margin-left:5%; margin-right:5%; float:left; text-align:center;}
+	 .content-left{ width:100%; text-align:center;}   
+	 	.content-right{ width:100%; text-align:center;  padding-top:24px;}  .content-right p { text-align:center;}
+		
+			 .content-middle-left{ width:100%; text-align:center; padding-top:24px; } .content-middle-left p { text-align:center;}
+	 	.content-middle-right{ width:100%; text-align:center;} 
+		 
+		.testimonial-inside { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+		 
+		
+.feature-box { padding-bottom:30px;}
+.feature-inside { width:90%; padding-left:5%; padding-right:5%;} .feature-inside ul li { width:100%; text-align:center; padding-bottom:40px;} 
+.feature-inside ul li p { text-align:center;}
+.feature ul li.text { width:100%; text-align:center; padding-bottom:0px;}
+		
+	 
+	.footer-main-box { width:90%; padding-left:5%; padding-right:5%; text-align:center;}
+	h1.styleFontface { font-size:48px; line-height:58px;}
+	h2.styleFontface { font-size:32px; line-height:36px;}
+	h3.styleFontface { font-size:32px; line-height:36px;}
+	h4.styleFontface { font-size:32px; line-height:36px;}
+	
+}
+
+@media only screen and (min-width: 300px) and (max-width: 479px)  {
+	/* -------------------------------------------- */
+	/* ------------------Grid System--------------- */
+	.zerogrid{width:100%; }
+	#content .top { height:auto;}
+	.top-inside { width:90%; height:auto; text-align:center; margin-left:5%; margin-right:5%;}
+	.top-left {width:100%; height: auto; text-align:center;} 
+	.top-right{ width:100%; text-align:center; padding-top:20px;}
+	#welcome { height:auto; width:100%; float:left; text-align:center;}
+ .welcome-inside { width:90%; text-align:center; padding-left:5%; padding-right:5%; padding-top:40px;}
+ .welcome-left { width:100%; text-align:center; padding-top:0px; padding-left:0%;}
+ .subnav ul li { background:url(../images/right-arrow.png) left 10px no-repeat; width:90%;}
+.subnav ul li h2.styleFontface { font-size:24px; line-height:28px;}
+
+ .form-box { width:100%; height:auto; margin-top:30px;}
+ .form-title h2.styleFontface { font-size:50px; line-height:54px; letter-spacing:0px;}
+ 
+ .body-title-inside { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+ .body-title-left { width:100%; text-align:center;} .body-title-left p { text-align:center;}
+ .body-title-right { width:100%; text-align:center; padding-top:30px;} .body-title-right p { text-align:center;}
+ 
+ .services-box { width:100%; padding-top:70px; padding-bottom:26px;}
+.services { width:90%; margin-left:5%; margin-right:5%;} .services ul li { width:100%; text-align:center; padding-bottom:40px; padding-top:0px; padding-left:0%; padding-right:0%;
+background-image:none;} .services ul li p { text-align:center;}
+.feature ul li { padding-bottom:0px;}
+
+.content-title { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+	.content-inside { width:90%; margin-left:5%; margin-right:5%; float:left; text-align:center;}
+	 .content-left{ width:100%; text-align:center;}   
+	 	.content-right{ width:100%; text-align:center;  padding-top:24px;}  .content-right p { text-align:center;}
+		
+			 .content-middle-left{ width:100%; text-align:center; padding-top:24px; } .content-middle-left p { text-align:center;}
+	 	.content-middle-right{ width:100%; text-align:center;} 
+		 
+		.testimonial-inside { width:90%; margin-left:5%; margin-right:5%; text-align:center;}
+		 
+		
+.feature-box { padding-bottom:30px;}
+.feature-inside { width:90%; padding-left:5%; padding-right:5%;} .feature-inside ul li { width:100%; text-align:center; padding-bottom:40px;} 
+.feature-inside ul li p { text-align:center;}
+.feature ul li.text { width:100%; text-align:center; padding-bottom:0px;}
+		
+	 
+	.footer-main-box { width:90%; padding-left:5%; padding-right:5%; text-align:center;}
+		h1.styleFontface { font-size:36px; line-height:44px;}
+		h2.styleFontface { font-size:30px; line-height:36px;}
+		h3.styleFontface { font-size:30px; line-height:36px;}
+		h4.styleFontface { font-size:30px; line-height:36px;}
+		html {
+		-webkit-text-size-adjust: none;
+	}
+}
+
+	

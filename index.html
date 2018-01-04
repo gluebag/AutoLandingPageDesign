@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width">
+        <title>AutoShield</title>
+
+        <!-- BOOTSTRAP Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/icons.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+        <style type="text/css">
+
+            body {
+                font-family: 'Lato', sans-serif;
+            }
+
+            @-webkit-keyframes fadeIn {
+                from {
+                    opacity: 0
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            .fadeIn {
+                -webkit-animation-name: fadeIn;
+                animation-name: fadeIn
+            }
+
+            .fadeIn {
+                -webkit-animation-name: fadeIn;
+                animation-name: fadeIn;
+            }
+            .animated {
+                -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+                -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+            a.button:hover {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+            h1.lowercase {
+                text-transform: none;
+            }
+            span.uppercase {
+                text-transform: uppercase;
+            }
+            .form-box {
+                box-shadow: -2.5px 4.3px 10px 0 rgba(0,54,92,0.3);
+            }
+
+            .auto-feature-row {
+                margin-top: 15px;
+            }
+            .auto-feature {
+                background-color: #FFFFFF;
+                /*border: 1px solid #e4e7ea;*/
+                border-radius: 5px;
+                box-shadow: 0 0 5px 0 rgba(0,54,92,0.3);
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display : flex;
+                align-items : center;
+            }
+            .auto-feature span:first-of-type {
+                color: #003746;
+                font-size: 1.4em;
+            }
+            .icon-text {
+                margin-left: 10px;
+            }
+            div.container-fluid {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .input-box {
+                background-color: rgba(255,255,255,0.7);
+                box-shadow: -2.5px 4.3px 10px 0 rgba(152,56,46,0.3);
+                border: 0;
+                color: black;
+            }
+            .content-box-last {
+                padding-bottom:0;
+            }
+
+            @media only screen and (min-width: 480px) and (max-width: 960px) {
+                .content-box-last {
+                    padding-bottom: 80px;
+                }
+            }
+            @media only screen and (max-width: 479px) and (min-width: 300px) {
+                .icon-text {
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+                .content-box-last {
+                    padding-bottom: 80px;
+                }
+            }
+
+        </style>
+
+        <script src="https://use.fontawesome.com/e11dc4a8bc.js"></script>
+    </head>
+    <body>
+
+
+<div class="content-wrapper">
+
+  <section id="content">
+  <div class="body-top-box">
+  <div class="wrap-content zerogrid">
+  <div class="top-inside">
+<div class="top-left">
+    <img src="images/logo.png" style="height: 50px"/>
+<!--<h5 class="styleFontface">Online <span class="white-bold">Care Rental</span></h5>-->
+</div>
+  <div class="top-right">
+             <h2 class="styleFontface">Start saving money today!</h2>
+</div>
+</div>
+  </div>
+  </div>
+    <section id="welcome">
+  <div class="wrap-content zerogrid">
+  <div class="welcome-inside">
+          <div class="welcome-left">
+            <h1 class="styleFontface lowercase">Compare Auto Warranty <br />
+                Quotes For <span class="underline uppercase">Free</span></h1>
+
+              <!--<div class="subnav">-->
+
+                  <!--<ul>-->
+                      <!--<li>-->
+                          <!--<h2 class="styleFontface">Personalized coverage plans</h2>-->
+                      <!--</li>-->
+                      <!--<li>-->
+                        <!--<h2 class="styleFontface">Match you with AAA rated warranty providers</h2>-->
+                      <!--</li>-->
+                  <!--</ul>-->
+
+              <!--</div>-->
+
+          </div>
+          <div class="form-box orange animated fadeIn">
+                <div class="form-title">
+                    <h2 class="styleFontface">START HERE!</h2>
+                    GET A QUOTE FOR YOUR MAKE AND MODEL.
+                </div>
+              <div class="form-inside">
+                <input name="textfield" type="text" class="input-box" id="textfield" placeholder="NAME" />
+                <br />
+                <input name="textfield2" type="text" class="input-box" id="textfield2" placeholder="Phone" />
+                <br />
+                <input name="textfield3" type="text" class="input-box" id="textfield3" placeholder="Email" />
+                <br />
+                <input name="textfield4" type="text" class="input-box" id="textfield4" placeholder="Zip Code" />
+              </div>
+
+              <div class="form-bottom-box">
+
+                <a href="#" title="GET MY FREE QUOTE" class="button button-orange">GET MY FREE QUOTE <i class="fa fa-angle-right"></i></a><br />
+                *No credit card required
+
+              </div>
+          </div>
+        </div>
+</div>
+<div class="clear"></div>
+</section>
+<div class="clear"></div>
+
+<div class="body-title-box">
+
+     <div class="wrap-content zerogrid">
+
+        <div class="body-title-inside">
+
+          <div class="body-title-left">
+
+              <h4 class="styleFontface">The best Auto Warranty coverage at the lowest rates</h4>
+
+              <p>Peace of mind knowing your vehicle has bumper to bumper coverage.</p>
+
+          </div>
+
+          <div class="body-title-right">
+
+              <div class="container-fluid">
+
+                  <div class="row equal">
+
+                      <div class="col-sm-6 col-xs-6">
+                          <div class="col-md-12 auto-feature">
+                              <span class="eicon-ac"></span>
+                              <span class="icon-text">Air Conditioner</span>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6 col-xs-6">
+                          <div class="col-md-12 auto-feature">
+                              <span class="eicon-brakes"></span>
+                              <span class="icon-text">Brakes</span>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6 col-xs-6 auto-feature-row">
+                          <div class="col-md-12 auto-feature">
+                              <span class="eicon-drive-axle"></span>
+                              <span class="icon-text">Drive Axle Assembly</span>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6 col-xs-6 auto-feature-row">
+                          <div class="col-md-12 auto-feature">
+                              <span class="eicon-electrical"></span>
+                              <span class="icon-text">Electrical Components</span>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6 col-xs-6 auto-feature-row">
+                          <div class="col-md-12 auto-feature">
+                              <span class="eicon-engine"></span>
+                              <span class="icon-text">Engine</span>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6 col-xs-6 auto-feature-row">
+                          <div class="col-md-12 auto-feature">
+                              <span class="eicon-suspension"></span>
+                              <span class="icon-text">Front & Rear Suspension</span>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6 col-xs-6 auto-feature-row">
+                          <div class="col-md-12 auto-feature">
+                              <span class="eicon-fuel"></span>
+                              <span class="icon-text">Fuel System</span>
+                          </div>
+                      </div>
+
+                      <div class="col-sm-6 col-xs-6 auto-feature-row">
+                          <div class="col-md-12 auto-feature">
+                              <span class="eicon-transmission"></span>
+                              <span class="icon-text">Transmission</span>
+                          </div>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="content-box">
+
+       <div class="wrap-content zerogrid">
+
+        <div class="content-inside">
+
+          <div class="content-left">
+
+              <img src="images/3x/Artboard%202@3x.png" class="img-responsive" alt="" />
+
+          </div>
+
+            <div class="content-right">
+
+                <h2 class="styleFontface">Protect yourself & your car</h2>
+
+                <p>When your vehicle’s factory warranty expires, you're in charge of fixing any mechanical breakdowns that may occur. That could mean spending large sums of money on auto repairs.</p>
+
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+<div class="services-box">
+      <div class="wrap-content zerogrid">
+        <div class="services">
+        <ul>
+        <li style="padding-left:0%;">
+          <h3 class="styleFontface">Why Us?</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting.<br /><br />
+         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </li>
+        <li>
+          <h3 class="styleFontface">Awesome Features</h3>
+          <div class="feature">
+          <ul>
+          <li>• Lorem Ipsum is simply dummy</li>
+          <li>• Text of the printing and typesetting</li>
+          <li>• Lorem Ipsum has been the</li>
+          <li>• Standard dummy text ever since</li>
+          <li>• Scrambled it to make a type</li>
+          <li>• It was popularised in the 1960s</li>
+          </ul>
+          </div>
+        </li>
+        <li style="padding-right:0%; background-image:none;">
+          <h3 class="styleFontface">About Warranty</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry's standard dummy text ever since.<br /><br />
+          The 1500s, when an unknown printer took a galley of type.</p>
+        </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="content-box content-box-last">
+
+      <div class="wrap-content zerogrid">
+        <div class="content-inside">
+
+        <div class="content-middle-right">
+
+            <img src="images/3x/Illustration%203@3x.png" class="img-responsive" alt="" style="max-width: 500px"/>
+            <!--<img src="images/car-bg2.jpg" alt="" />-->
+
+        </div>
+
+          <div class="content-middle-left">
+            <h2 class="styleFontface">Reliability matters,<br />
+              Best Prices Always</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br /><br />
+             If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum 
+            generators on the Internet tend to repeat predefined chunks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+
+    <!--<div class="feature-box">-->
+      <!--<div class="wrap-content zerogrid">-->
+        <!--<div class="feature-inside">-->
+        <!--<ul>-->
+        <!--<li>-->
+          <!--<h3 class="styleFontface">Useful info</h3>-->
+          <!--<div class="feature">-->
+          <!--<ul>-->
+          <!--<li class="text">• Lorem Ipsum is simply dummy</li>-->
+          <!--<li class="text">• Text of the printing and typesetting</li>-->
+          <!--<li class="text">• Lorem Ipsum has been the</li>-->
+          <!--<li class="text">• Standard dummy text ever since</li>-->
+          <!--<li class="text">• Scrambled it to make a type</li>-->
+          <!--<li class="text">• It was popularised in the 1960s</li>-->
+          <!--</ul>-->
+          <!--</div>-->
+        <!--</li>-->
+        <!--<li><img src="images/feature-bg.jpg" alt=""/></li>-->
+        <!--<li style="margin-right:0px;">-->
+          <!--<h2 class="styleFontface">Contrary to popular<br />-->
+            <!--Lorem Ipsum is not simply</h2>-->
+            <!--<p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.-->
+             <!--It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.</p>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="clear"></div>-->
+    <!--<div class="testimonial-box">-->
+      <!--<div class="wrap-content zerogrid">-->
+        <!--<div class="testimonial-inside">-->
+          <!--<h2 class="styleFontface">&quot;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text -->
+          <!--ever since the 1500s. &quot;<br />-->
+          <!--<span style="font-size:24px; line-height:50px; color: #0a81df;">DONALD WRIGHT</span></h2>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="clear"></div>-->
+
+  </section>
+  <div class="clear"></div>
+  <footer>
+<div class="wrap-footer zerogrid">
+  <div class="footer-main-box">©2017 AutoShield. All Rights Reserved</div>
+</div>
+  <div class="clear"></div>
+</footer>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        // make sure auto feature boxes are all the same size
+        var resizeAutoFeatures = function() {
+
+            var biggestHeight = 0;
+            var resize = false;
+
+            $('.auto-feature').each(function(index, element) {
+                var el = $(element);
+                if(el.height() > biggestHeight) {
+                    if(biggestHeight > 0) {
+                        resize = true;
+                    }
+                    biggestHeight = el.height()
+                }
+            });
+
+            if(!resize)
+                return;
+
+            console.log('resizing to: [' + biggestHeight + ']');
+            $('.auto-feature').each(function(index, element) {
+                $(element).height(biggestHeight);
+            });
+        };
+        setInterval(resizeAutoFeatures, 1000);
+        resizeAutoFeatures();
+
+    });
+
+</script>
+
+
+</body>
+</html>
