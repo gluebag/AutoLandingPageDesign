@@ -94,7 +94,7 @@
             .icon-text {
                 margin-left: 10px;
             }
-            div.container-fluid {
+            div.container-fluid,footer {
                 -webkit-box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 box-sizing: border-box;
@@ -112,12 +112,51 @@
                 max-width: 500px;
             }
 
+            /** FOOTER **/
+            footer hr {
+                margin-top: 20px;
+                margin-bottom: 0;
+                border: 0;
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            .footer-logo {
+                padding-bottom: 30px;
+            }
+            .footer-links>a {
+                color: #fff;
+            }
+            .footer-links>span {
+                background: #fff none repeat scroll 0 0;
+                display: inline-block;
+                height: 12px;
+                margin: 0 10px;
+                width: 2px;
+            }
+            .footer-terms {
+                margin-top: 20px;
+                color: #fff;
+            }
+            .footer-terms p {
+                color: #ebebeb;
+                font-size: 13px;
+                margin: 0 0 10px;
+            }
+
+            /** RESPONSIVE **/
+            @media only screen and (min-width: 960px) and (max-width: 1000px) {
+                .button {
+                    font-size: 18px;
+                }
+            }
             @media only screen and (min-width: 480px) and (max-width: 960px) {
                 .content-box-last {
                     padding-bottom: 80px;
                 }
                 img.limited-width {
                     max-width: 100%;
+                }
+                .button {
+                    font-size: 18px;
                 }
             }
             @media only screen and (max-width: 479px) and (min-width: 300px) {
@@ -130,6 +169,22 @@
                 }
                 img.limited-width {
                     max-width: 100%;
+                }
+            }
+
+            @media (max-width: 600px) {
+
+                .footer-main-box .pull-left,.footer-main-box .pull-right {
+                    float: none!important;
+                    text-align: center
+                }
+
+                .footer-main-box .pull-left {
+                    margin-bottom: 30px
+                }
+
+                .footer-main-box {
+                    padding: 25px 0
                 }
             }
 
@@ -419,11 +474,84 @@
   </section>
   <div class="clear"></div>
   <footer>
-<div class="wrap-footer zerogrid">
-  <div class="footer-main-box">©2017 AutoShield. All Rights Reserved</div>
-</div>
-  <div class="clear"></div>
-</footer>
+
+    <!--<div class="wrap-footer zerogrid">-->
+
+      <div class="footer-main-box text-center">
+
+          <div class="container">
+
+              <div class="row clearfix">
+                  <img src="images/logo.png" class="footer-logo"/>
+              </div>
+
+              <div class="row clearfix">
+
+                  <div class="col-md-6">
+
+                      <div class="pull-left">
+
+                          <div class="footer-links">
+
+                              <a href="/">Home</a>
+
+                              <span></span>
+
+                              <a href="/blog">Blog</a>
+
+                              <span></span>
+
+                              <a href="/privacy">Privacy Policy</a>
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+                  <div class="col-md-6">
+                      <div class="pull-right">
+                          <span class="copyright">&copy;2018 AutoShield. All Rights Reserved</span>
+                      </div>
+                  </div>
+
+              </div>
+
+              <hr>
+
+              <!-- Terms Start -->
+              <div class="row clearfix">
+
+                  <div class="col-md-10">
+                      <div class="pull-left">
+                          <div class="footer-terms">
+
+                              <p>AutoShield is a 3rd party and by submitting this inquiry it is understood that you will be matched with and contacted by a preferred vehicle specialist.</p>
+
+                              <p>If your manufacturer’s auto warranty or dealer’s extended auto warranty has expired or is about to expire and you are now looking for extended vehicle coverage through a new vehicle service contract, please do not hesitate to inquire on this form for a FREE quote.</p>
+
+                              <p>Whether your vehicle is a new or used car there are available car coverage plans to protect you from spending thousands on future repair bills. Mechanical, Electrical and Engine issues can all be unexpected costly expenses without having a vehicle protection plan.</p>
+
+                              <p>You are eligible for auto repair bill coverage if your vehicle is of domestic make (examples: Ford, GMC, Dodge, Chrysler, Pontiac, Buick, Oldsmobile, Chevrolet, Lincoln, Jeep, etc) or foreign make (examples: BMW, Honda, Toyota, Lexus, Volvo, Nissan, Mazda, Mitsubishi, Suzuki, Mercedes Benz, Hyundai, Kia, Volkswagen, Audi, Acura, etc).</p>
+
+                          </div>
+
+
+                      </div>
+                  </div>
+
+              </div>
+              <!-- Terms End -->
+          </div>
+
+
+      </div>
+
+    <!--</div>-->
+
+    <div class="clear"></div>
+
+    </footer>
 </div>
 
 <script

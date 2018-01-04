@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d44feb83-55c7-455b-bd93-c7cb8813ad25" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,13 +24,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1022">
-              <caret line="130" column="35" lean-forward="true" selection-start-line="130" selection-start-column="35" selection-end-line="130" selection-end-column="35" />
+            <state relative-caret-position="956">
+              <caret line="119" column="25" lean-forward="false" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1515089660000" expanded="false" signature="13930:13947" ph="..." />
-                <marker date="1515089660000" expanded="false" signature="14903:14952" ph="..." />
+                <marker date="1515093237000" expanded="false" signature="15508:15525" ph="..." />
+                <marker date="1515093237000" expanded="false" signature="16481:16530" ph="..." />
               </folding>
             </state>
           </provider>
@@ -56,8 +58,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="329" column="21" lean-forward="false" selection-start-line="329" selection-start-column="21" selection-end-line="329" selection-end-column="21" />
+            <state relative-caret-position="789">
+              <caret line="141" column="19" lean-forward="true" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -66,8 +68,8 @@
       <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="38" />
+            <state relative-caret-position="163">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -96,6 +98,12 @@
       <find>useful</find>
       <find>stylefon</find>
       <find>limited-wi</find>
+      <find>footer-main-box</find>
+      <find>footer-main</find>
+      <find>footer-wrap</find>
+      <find>button</find>
+      <find>logo</find>
+      <find>footer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,6 +114,7 @@
       <list>
         <option value="$PROJECT_DIR$/icons/icons.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -160,6 +169,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -195,12 +205,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515004246018</updated>
-      <workItem from="1515004247333" duration="20470000" />
+      <workItem from="1515004247333" duration="23380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20470000" />
+    <option name="totallyTimeSpent" value="23380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="44" width="1777" height="1515" extended-state="0" />
@@ -308,14 +318,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/1x/Illustration 3.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -323,21 +325,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="329" column="21" lean-forward="false" selection-start-line="329" selection-start-column="21" selection-end-line="329" selection-end-column="21" />
+        <state relative-caret-position="789">
+          <caret line="141" column="19" lean-forward="true" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1022">
-          <caret line="130" column="35" lean-forward="true" selection-start-line="130" selection-start-column="35" selection-end-line="130" selection-end-column="35" />
+        <state relative-caret-position="956">
+          <caret line="119" column="25" lean-forward="false" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1515089660000" expanded="false" signature="13930:13947" ph="..." />
-            <marker date="1515089660000" expanded="false" signature="14903:14952" ph="..." />
+            <marker date="1515093237000" expanded="false" signature="15508:15525" ph="..." />
+            <marker date="1515093237000" expanded="false" signature="16481:16530" ph="..." />
           </folding>
         </state>
       </provider>
