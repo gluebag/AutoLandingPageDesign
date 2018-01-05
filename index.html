@@ -1020,48 +1020,50 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
+<!-- global helper functions needed -->
+<script type="text/javascript" src="/js/helpers.js"></script>
 
 <script type="text/javascript">
 
     $(document).ready(function () {
 
         var printedHeightsOnce = false;
-        window.biggestHeight = 0;
 
         // make sure auto feature boxes are all the same size
-        window.resizeAutoFeatures = function () {
+        var resizeAutoFeatures = function () {
 
-            var resize = false;
+            var elements = $('.auto-feature');
+            var sizes = [];
 
-            $('.auto-feature').each(function (index, element) {
+            elements.each(function (index, element) {
+
                 var el = $(element);
 
                 if(!printedHeightsOnce) {
                     console.log("[" + index.toString() + "]: " + el.height());
                 }
 
-                if (el.height() > window.biggestHeight) {
-                    if (window.biggestHeight > 0) {
-                        resize = true;
-                    }
-                    window.biggestHeight = el.height()
-                }
+                sizes.push(el.height());
             });
 
             if(!printedHeightsOnce) {
                 printedHeightsOnce = true;
             }
 
-            if (!resize)
+            // check if no resize needed
+            if(sizes.allValuesSame()) {
                 return;
+            }
 
-            console.log('resizing to: [' + window.biggestHeight + ']');
-            $('.auto-feature').each(function (index, element) {
-                $(element).height(window.biggestHeight);
+            var largestHeight = sizes.getLargestNumber();
+            console.log('resizing to: [' + largestHeight.toString() + ']');
+            elements.each(function (index, element) {
+                $(element).height(largestHeight);
             });
         };
-        setInterval(window.resizeAutoFeatures, 1000);
-        window.resizeAutoFeatures();
+
+        setInterval(resizeAutoFeatures, 1000);
+        resizeAutoFeatures();
 
     });
 

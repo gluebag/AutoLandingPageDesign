@@ -8,3 +8,7 @@ Array.prototype.allValuesSame = function() {
 
     return true;
 };
+
+Array.prototype.getLargestNumber = function () {
+    return Math.max.apply(null, this);
+};
