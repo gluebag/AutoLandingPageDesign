@@ -73,7 +73,7 @@ progress, section, source, video {display:block;}
 	float:left;
 	text-align:center;
 	width:100%;
-	background:url(../images/welcome-bg.jpg) center top no-repeat;
+	background:url(../images/welcome-bg-no-white-border.jpg) center top no-repeat;
 	background-color: #eef8f7;
 }
 
