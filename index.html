@@ -721,7 +721,7 @@
 
                         <div class="container-fluid">
 
-                            <div class="row equal">
+                            <div class="row">
 
                                 <div class="col-sm-6 col-xs-6">
                                     <div class="col-md-12 auto-feature">
@@ -1026,11 +1026,11 @@
     $(document).ready(function () {
 
         var printedHeightsOnce = false;
+        window.biggestHeight = 0;
 
         // make sure auto feature boxes are all the same size
         window.resizeAutoFeatures = function () {
 
-            var biggestHeight = 0;
             var resize = false;
 
             $('.auto-feature').each(function (index, element) {
@@ -1040,11 +1040,11 @@
                     console.log("[" + index.toString() + "]: " + el.height());
                 }
 
-                if (el.height() > biggestHeight) {
-                    if (biggestHeight > 0) {
+                if (el.height() > window.biggestHeight) {
+                    if (window.biggestHeight > 0) {
                         resize = true;
                     }
-                    biggestHeight = el.height()
+                    window.biggestHeight = el.height()
                 }
             });
 
@@ -1055,9 +1055,9 @@
             if (!resize)
                 return;
 
-            console.log('resizing to: [' + biggestHeight + ']');
+            console.log('resizing to: [' + window.biggestHeight + ']');
             $('.auto-feature').each(function (index, element) {
-                $(element).height(biggestHeight);
+                $(element).height(window.biggestHeight);
             });
         };
         setInterval(window.resizeAutoFeatures, 1000);
