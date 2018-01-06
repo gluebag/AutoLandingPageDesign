@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>AutoShield</title>
 
     <!-- BOOTSTRAP Latest compiled and minified CSS -->
@@ -1027,8 +1027,6 @@
 
     $(document).ready(function () {
 
-        var printedHeightsOnce = false;
-
         // make sure auto feature boxes are all the same size
         var resizeAutoFeatures = function () {
 
@@ -1038,17 +1036,9 @@
             elements.each(function (index, element) {
 
                 var el = $(element);
-
-                if(!printedHeightsOnce) {
-                    console.log("[" + index.toString() + "]: " + el.height());
-                }
-
                 sizes.push(el.height());
-            });
 
-            if(!printedHeightsOnce) {
-                printedHeightsOnce = true;
-            }
+            });
 
             // check if no resize needed
             if(sizes.allValuesSame()) {
@@ -1056,7 +1046,7 @@
             }
 
             var largestHeight = sizes.getLargestNumber();
-            console.log('resizing to: [' + largestHeight.toString() + ']');
+//            console.log('resizing to: [' + largestHeight.toString() + ']');
             elements.each(function (index, element) {
                 $(element).height(largestHeight);
             });

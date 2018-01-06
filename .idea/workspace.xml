@@ -22,15 +22,15 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="1030" column="0" lean-forward="true" selection-start-line="1030" selection-start-column="0" selection-end-line="1030" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1515196843000" expanded="false" signature="44466:44483" ph="..." />
-                <marker date="1515196843000" expanded="false" signature="45434:45483" ph="..." />
+                <marker date="1515197258000" expanded="false" signature="44503:44520" ph="..." />
+                <marker date="1515197258000" expanded="false" signature="45471:45520" ph="..." />
               </folding>
             </state>
           </provider>
@@ -233,12 +233,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515004246018</updated>
-      <workItem from="1515004247333" duration="41762000" />
+      <workItem from="1515004247333" duration="42166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41762000" />
+    <option name="totallyTimeSpent" value="42166000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="223" y="40" width="1777" height="1515" extended-state="0" />
@@ -377,15 +377,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="1030" column="0" lean-forward="true" selection-start-line="1030" selection-start-column="0" selection-end-line="1030" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#6;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1515196843000" expanded="false" signature="44466:44483" ph="..." />
-            <marker date="1515196843000" expanded="false" signature="45434:45483" ph="..." />
+            <marker date="1515197258000" expanded="false" signature="44503:44520" ph="..." />
+            <marker date="1515197258000" expanded="false" signature="45471:45520" ph="..." />
           </folding>
         </state>
       </provider>
