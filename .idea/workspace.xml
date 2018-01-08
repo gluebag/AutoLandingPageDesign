@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d44feb83-55c7-455b-bd93-c7cb8813ad25" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/1x/Illustration 3.png" afterPath="$PROJECT_DIR$/images/1x/Illustration 3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/2x/Illustration 3@2x.png" afterPath="$PROJECT_DIR$/images/2x/Illustration 3@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/3x/Illustration 3@3x.png" afterPath="$PROJECT_DIR$/images/3x/Illustration 3@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/SVG/Illustration 3.svg" afterPath="$PROJECT_DIR$/images/SVG/Illustration 3.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/illustration-3.svg" afterPath="$PROJECT_DIR$/images/illustration-3.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="617">
+              <caret line="980" column="96" lean-forward="false" selection-start-line="976" selection-start-column="21" selection-end-line="980" selection-end-column="96" />
               <folding>
                 <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -34,9 +36,10 @@
                 <element signature="n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#7;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1515204043000" expanded="false" signature="45140:45157" ph="..." />
-                <marker date="1515204043000" expanded="false" signature="46108:46157" ph="..." />
+                <element signature="n#div#5;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1515424983000" expanded="false" signature="46743:46783" ph="..." />
+                <marker date="1515424983000" expanded="false" signature="49976:49993" ph="..." />
+                <marker date="1515424983000" expanded="false" signature="50944:50993" ph="..." />
               </folding>
             </state>
           </provider>
@@ -159,8 +162,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="223" />
-    <option name="y" value="40" />
+    <option name="x" value="35" />
+    <option name="y" value="41" />
     <option name="width" value="1777" />
     <option name="height" value="1515" />
   </component>
@@ -191,6 +194,12 @@
               <item name="NewAutoShield" type="b2602c69:ProjectViewProjectNode" />
               <item name="NewAutoShield" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="NewAutoShield" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewAutoShield" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="3x" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="NewAutoShield" type="b2602c69:ProjectViewProjectNode" />
@@ -244,15 +253,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515004246018</updated>
-      <workItem from="1515004247333" duration="48205000" />
+      <workItem from="1515004247333" duration="50296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48205000" />
+    <option name="totallyTimeSpent" value="50296000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="223" y="40" width="1777" height="1515" extended-state="0" />
+    <frame x="35" y="41" width="1777" height="1515" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -324,11 +333,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/3x/Artboard 2@3x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/illustration-2.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="689">
@@ -391,10 +395,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/3x/Artboard 2@3x.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="617">
+          <caret line="980" column="96" lean-forward="false" selection-start-line="976" selection-start-column="21" selection-end-line="980" selection-end-column="96" />
           <folding>
             <element signature="n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -402,9 +411,10 @@
             <element signature="n#div#1;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#7;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1515204043000" expanded="false" signature="45140:45157" ph="..." />
-            <marker date="1515204043000" expanded="false" signature="46108:46157" ph="..." />
+            <element signature="n#div#5;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1515424983000" expanded="false" signature="46743:46783" ph="..." />
+            <marker date="1515424983000" expanded="false" signature="49976:49993" ph="..." />
+            <marker date="1515424983000" expanded="false" signature="50944:50993" ph="..." />
           </folding>
         </state>
       </provider>
