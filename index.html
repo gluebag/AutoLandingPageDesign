@@ -31,6 +31,17 @@
         .content-box-last {
             background-color: #eef8f7;
         }
+        .fieldset-hidden {
+            display: none;
+        }
+        .form-loader {
+            margin-top: 150px;
+            display: none;
+            color: #00365c;
+            font-size: 35pt;
+            text-align: center;
+            min-height: 240px;
+        }
 
     </style>
 </head>
@@ -96,8 +107,7 @@
                     <div class="form-box orange animated fadeIn">
 
                         <div class="form-title">
-                            <h2 class="styleFontface" style="font-family: 'Lato', Arial, Helvetica, sans-serif">START HERE!</h2>
-                            COMPARE FREE QUOTES FOR YOUR MAKE AND MODEL.
+                            <h2 class="styleFontface" style="font-family: 'Lato', Arial, Helvetica, sans-serif">START HERE!</h2>COMPARE FREE QUOTES FOR YOUR MAKE AND MODEL.
                         </div>
 
                         <div class="form-inside">
@@ -107,94 +117,128 @@
 
                                     <form action="/" method="POST">
 
+                                        <div class="form-loader">
+                                            <i class="fa fa-circle-o-notch fa-spin"></i>
+                                        </div>
 
-                                        <div class="form-group custom-form">
+                                        <fieldset class="step-1">
 
-                                            <label for="car-year" class="sr-only">Car Vehicle Year</label>
-                                            <div class="custom-select-wrapper">
+                                            <div class="form-group custom-form">
+                                                <label for="car-year" class="sr-only">Car Vehicle Year</label>
+                                                <div class="custom-select-wrapper">
 
-                                                <div class="drop-down">
-                                                    <span class="text">Year</span>
-                                                    <span class="arrow"></span>
+                                                    <div class="drop-down">
+                                                        <span class="text">Year</span>
+                                                        <span class="arrow"></span>
+                                                    </div>
+
+                                                    <select class="form-control custom required" id="car-year" name="car-year">
+                                                        <option value="default">Year</option>
+                                                    </select>
+
                                                 </div>
 
-                                                <select class="form-control custom required" id="car-year" name="car-year">
-                                                    <option value="default">Year</option>
-                                                </select>
-
                                             </div>
+                                            <div class="clear"></div>
 
-                                        </div>
-                                        <div class="clear"></div>
+                                            <div class="form-group custom-form">
+                                                <label for="car-make" class="sr-only">Car Make</label>
+                                                <div class="custom-select-wrapper">
 
-                                        <div class="form-group custom-form">
-                                            <label for="car-make" class="sr-only">Car Make</label>
-                                            <div class="custom-select-wrapper">
+                                                    <div class="drop-down">
+                                                        <span class="text">Make</span>
+                                                        <span class="arrow"></span>
+                                                    </div>
 
-                                                <div class="drop-down">
-                                                    <span class="text">Make</span>
-                                                    <span class="arrow"></span>
+                                                    <select class="form-control custom required" id="car-make" name="car-make">
+                                                        <option value="default">Make</option>
+                                                    </select>
+
                                                 </div>
-
-                                                <select class="form-control custom required" id="car-make" name="car-make">
-                                                    <option value="default">Make</option>
-                                                </select>
-
                                             </div>
-                                        </div>
-                                        <div class="clear"></div>
+                                            <div class="clear"></div>
 
-                                        <div class="form-group custom-form">
-                                            <label for="car-model" class="sr-only">Car Model</label>
+                                            <div class="form-group custom-form">
+                                                <label for="car-model" class="sr-only">Car Model</label>
+                                                <div class="custom-select-wrapper">
 
-                                            <div class="custom-select-wrapper">
-
-                                                <div class="drop-down">
-                                                    <span class="text">Model</span>
-                                                    <span class="arrow"></span>
+                                                    <div class="drop-down">
+                                                        <span class="text">Model</span>
+                                                        <span class="arrow"></span>
+                                                    </div>
+                                                    <select class="form-control custom required" id="car-model" name="car-model">
+                                                        <option value="default">Model</option>
+                                                    </select>
                                                 </div>
-                                                <select class="form-control custom required" id="car-model" name="car-model">
-                                                    <option value="default">Model</option>
-                                                </select>
                                             </div>
-                                        </div>
-                                        <div class="clear"></div>
+                                            <div class="clear"></div>
 
-                                        <div class="form-group custom-form">
-                                            <label for="car-mileage" class="sr-only">Car Mileage</label>
+                                            <div class="form-group custom-form">
+                                                <label for="car-mileage" class="sr-only">Car Mileage</label>
+                                                <div class="custom-select-wrapper">
 
-                                            <div class="custom-select-wrapper">
-
-                                                <div class="drop-down">
-                                                    <span class="text">Mileage</span>
-                                                    <span class="arrow"></span>
+                                                    <div class="drop-down">
+                                                        <span class="text">Mileage</span>
+                                                        <span class="arrow"></span>
+                                                    </div>
+                                                    <select class="form-control custom required" id="car-mileage" name="car-mileage">
+                                                        <option value="default">Mileage</option>
+                                                        <option value="10000">0 - 10,000</option>
+                                                        <option value="20000">10,001 - 20,000</option>
+                                                        <option value="30000">20,001 - 30,000</option>
+                                                        <option value="40000">30,001 - 40,000</option>
+                                                        <option value="50000">40,001 - 50,000</option>
+                                                        <option value="60000">50,001 - 60,000</option>
+                                                        <option value="70000">60,001 - 70,000</option>
+                                                        <option value="80000">70,001 - 80,000</option>
+                                                        <option value="90000">80,001 - 90,000</option>
+                                                        <option value="100000">90,001 - 100,000</option>
+                                                        <option value="110000">100,001 - 110,000</option>
+                                                        <option value="120000">110,001 - 120,000</option>
+                                                        <option value="130000">120,001 - 130,000</option>
+                                                        <option value="140000">140,001 - 150,000</option>
+                                                        <option value="150000">150,001 - 160,000</option>
+                                                        <option value="160000">160,001 - 170,000</option>
+                                                        <option value="170000">170,001 - 180,000</option>
+                                                        <option value="180000">180,001 - 190,000</option>
+                                                        <option value="190000">190,001 - 200,000</option>
+                                                        <option value="200000">200,000+</option>
+                                                    </select>
                                                 </div>
-                                                <select class="form-control custom required" id="car-mileage" name="car-mileage">
-                                                    <option value="default">Mileage</option>
-                                                    <option value="10000">0 - 10,000</option>
-                                                    <option value="20000">10,001 - 20,000</option>
-                                                    <option value="30000">20,001 - 30,000</option>
-                                                    <option value="40000">30,001 - 40,000</option>
-                                                    <option value="50000">40,001 - 50,000</option>
-                                                    <option value="60000">50,001 - 60,000</option>
-                                                    <option value="70000">60,001 - 70,000</option>
-                                                    <option value="80000">70,001 - 80,000</option>
-                                                    <option value="90000">80,001 - 90,000</option>
-                                                    <option value="100000">90,001 - 100,000</option>
-                                                    <option value="110000">100,001 - 110,000</option>
-                                                    <option value="120000">110,001 - 120,000</option>
-                                                    <option value="130000">120,001 - 130,000</option>
-                                                    <option value="140000">140,001 - 150,000</option>
-                                                    <option value="150000">150,001 - 160,000</option>
-                                                    <option value="160000">160,001 - 170,000</option>
-                                                    <option value="170000">170,001 - 180,000</option>
-                                                    <option value="180000">180,001 - 190,000</option>
-                                                    <option value="190000">190,001 - 200,000</option>
-                                                    <option value="200000">200,000+</option>
-                                                </select>
                                             </div>
-                                        </div>
-                                        <div class="clear"></div>
+                                            <div class="clear"></div>
+
+                                        </fieldset>
+
+                                        <fieldset class="step-2 fieldset-hidden">
+
+                                            <div class="form-group custom-form">
+                                                <label for="first_name" class="sr-only">Your first name</label>
+                                                <input type="text" class="input-box" name="first_name" id="first_name" placeholder="First name" />
+                                            </div>
+
+                                            <div class="form-group custom-form">
+                                                <label for="last_name" class="sr-only">Your last name</label>
+                                                <input type="text" class="input-box" name="last_name" id="last_name" placeholder="Last name" />
+                                            </div>
+
+                                            <div class="form-group custom-form">
+                                                <label for="zip" class="sr-only">Your zip code</label>
+                                                <input type="text"  class="input-box number" name="zip" id="zip" placeholder="Zip code" />
+                                            </div>
+
+                                            <div class="form-group custom-form">
+                                                <label for="email" class="sr-only">Your email address</label>
+                                                <input type="email"  class="input-box" name="email" id="email" placeholder="Email" />
+                                            </div>
+
+                                            <div class="form-group custom-form">
+                                                <label for="phone_number" class="sr-only">Your phone number</label>
+                                                <input type="text"  class="input-box number" name="phone_number" id="phone_number" placeholder="Phone number" />
+                                            </div>
+
+
+                                        </fieldset>
 
 
 
@@ -208,8 +252,7 @@
 
                         <div class="form-bottom-box">
 
-                            <button title="GET MY FREE QUOTES" class="button button-orange" id="continue-btn">GET MY FREE QUOTES <i
-                                    class="fa fa-angle-right"></i></button>
+                            <button title="GET YOUR FREE QUOTES" class="button button-orange btn-next" id="continue-btn">GET YOUR FREE QUOTES <i class="fa fa-angle-right"></i></button>
 
                             <p>*No credit card required</p>
 
@@ -641,6 +684,8 @@
 <!-- car select elements -->
 <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="js/cars-selector.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="js/cars-dynamic-form.js"></script>
 
 <script type="text/javascript">
 
