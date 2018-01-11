@@ -185,9 +185,17 @@ input:focus
     -moz-border-radius:5px;
     border-radius: 5px;
     display: inline-block;
+    border: 0;
+    transition: background ease-in .2s;
 }
 .button:hover {
-	background: #012e4e;
+	background: #8db548;
+}
+.button.disabled, .button[disabled] {
+    cursor: not-allowed;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    box-shadow: none;
 }
 
 
@@ -595,6 +603,16 @@ input[type="text"], input[type="password"], .drop-down {
     filter: alpha(opacity=0);
     zoom: 1;
 }
+.custom-select-wrapper select[disabled] {
+    opacity: 0;
+}
+.drop-down-disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+}
 
 .drop-down {
 
@@ -626,6 +644,7 @@ input[type="text"], input[type="password"], .drop-down {
 
 .drop-down.itemSelected {
     color: #8db548;
+    font-weight:bold;
 }
 
 .drop-down .arrow {
